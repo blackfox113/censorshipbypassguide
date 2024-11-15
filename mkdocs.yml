@@ -10,6 +10,7 @@ nav:
   - Guide:
       - V2ray: "guide/V2ray.md"
       - VPN: "guide/VPN.md"
+      - Kasm Workspaces: "guide/Kasm.md"
   - Support:
       - Support: "support/Support.md"
   - Misc:

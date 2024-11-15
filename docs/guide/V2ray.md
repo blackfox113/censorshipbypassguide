@@ -28,10 +28,11 @@ The most popular setup is: `VLESS + CDN + WS + TLS`.
 ## Setup: **VLESS + CDN + WS + TLS**
 
 ### Requirements
-- A domain name (e.g., via Cloudflare)
+- A domain name with cloudflare
 - A **Linux** VPS with port forwarding for 443 and a random port
   *(Web hosting services like Render or Koyeb can also work; they often include a domain and CDN.)*
 - Basic command-line skills
+- Root
 
 ---
 
