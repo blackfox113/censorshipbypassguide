@@ -6,8 +6,8 @@ features:
   - navigation.side.indexes
 
 nav:
+  - Home: "index.md" # This will be the homepage
   - Guide:
-      - Overview: "guide/index.md" # A landing page for Guide
       - V2ray: "guide/V2ray.md"
       - VPN: "guide/VPN.md"
   - Support:
