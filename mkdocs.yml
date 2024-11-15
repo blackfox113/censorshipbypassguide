@@ -1,3 +1,16 @@
 site_name: Censorship Bypass Guide
 theme:
-  name: gitbook
+  name: terminal
+
+features:
+  - navigation.side.indexes
+
+nav:
+  - Guide:
+      - Overview: "guide/index.md" # A landing page for Guide
+      - V2ray: "guide/V2ray.md"
+      - VPN: "guide/VPN.md"
+  - Support:
+      - Support: "support/Support.md"
+  - Misc:
+      - Contacts: "misc/contacts.md"
