@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.6.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>V2ray - Censorship Bypass Guide</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Censorship Bypass Guide</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Guide</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">V2ray</span>
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../VPN/">VPN</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Support</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../support/Support/">Support</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Misc</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../misc/contacts/">Contacts</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#v2ray-setup-guide">V2Ray Setup Guide</a></li>
+        <li><a href="#what-is-v2ray">What is V2Ray?</a></li><li><a href="#setup-vless-cdn-ws-tls">Setup: VLESS + CDN + WS + TLS</a></li><li><a href="#youre-done">You're Done!</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="v2ray-setup-guide">V2Ray Setup Guide</h1>
+<h2 id="what-is-v2ray">What is V2Ray?</h2>
+<p>V2Ray is a robust proxy tool that enhances privacy, bypasses censorship, and supports multiple protocols. It encrypts internet traffic, ensuring secure and unrestricted browsing.</p>
+<blockquote>
+<p><strong>Note:</strong> V2Ray is a protocol framework, not a server provider. You can either set up your own server or use a provider (often referred to as "机场" in Chinese).</p>
+</blockquote>
+<h3 id="common-protocols">Common Protocols:</h3>
+<ul>
+<li><strong>VLESS</strong>: Lightweight and generally better for servers.</li>
+<li><strong>VMESS</strong>: More configurable with advanced features for bypassing strict censorship.</li>
+</ul>
+<p>The most popular setup is: <code>VLESS + CDN + WS + TLS</code>.</p>
+<hr />
+<h3 id="explanation-of-terms">Explanation of Terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VLESS</td>
+<td>A protocol used in V2Ray configurations.</td>
+</tr>
+<tr>
+<td>WS</td>
+<td>WebSocket, an upgraded HTTP protocol supporting real-time data syncing.</td>
+</tr>
+<tr>
+<td>TLS</td>
+<td>Encryption protocol protecting data from being visible to firewalls.</td>
+</tr>
+<tr>
+<td>CDN</td>
+<td>Content Delivery Network; caches content closer to users for speed and makes servers harder to block.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="setup-vless-cdn-ws-tls">Setup: <strong>VLESS + CDN + WS + TLS</strong></h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>A domain name (e.g., via Cloudflare)</li>
+<li>A <strong>Linux</strong> VPS with port forwarding for 443 and a random port
+  <em>(Web hosting services like Render or Koyeb can also work; they often include a domain and CDN.)</em></li>
+<li>Basic command-line skills</li>
+</ul>
+<hr />
+<h3 id="install-x-ui">Install X-UI</h3>
+<ol>
+<li>Run the following command to install <strong>x-ui</strong>:
+   <code>bash
+   bash &lt;(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)</code><blockquote>
+<p>Follow the instructions to install. Ensure you enable <strong>system startup</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h3 id="disable-firewall">Disable Firewall</h3>
+<p>If using a Debian-based distro:</p>
+<ol>
+<li>Install <code>ufw</code> (if not already installed):
+   <code>bash
+   sudo apt install ufw</code></li>
+<li>Disable the firewall:
+   <code>bash
+   sudo ufw disable</code></li>
+</ol>
+<hr />
+<h3 id="access-x-ui-panel">Access X-UI Panel</h3>
+<ol>
+<li>Open your browser and navigate to:
+   <code>http://&lt;server-ip&gt;:&lt;port-you-set&gt;</code></li>
+<li>Log in with your credentials.</li>
+</ol>
+<hr />
+<h3 id="set-up-the-vless-endpoint">Set Up the VLESS Endpoint</h3>
+<ol>
+<li>In the X-UI panel, click <strong>"Inbounds"</strong>.</li>
+<li>Click the <strong>"+"</strong> button to add a new inbound.</li>
+<li>Configure as follows:</li>
+</ol>
+<pre><code class="language-plaintext">   Remark: VLESS
+   Protocol: vless
+   Listening IP: (Leave Blank)
+   Port: 443
+   Total Traffic (GB): (Leave Blank)
+   Expiry Date: (Leave Blank)
+   Disable Insecure Encryption: False
+   Transmission: ws
+   Accept Proxy Protocol: False
+   Path: (Keep Default)
+   TLS: False
+   Sniffing: True
+</code></pre>
+<ol>
+<li>Click <strong>"Add To"</strong> to save.</li>
+</ol>
+<hr />
+<h3 id="forward-port-443">Forward Port 443</h3>
+<ol>
+<li>Access your VPS control panel or router settings.</li>
+<li>Forward port <strong>443</strong>.</li>
+</ol>
+<hr />
+<h3 id="set-up-cloudflare">Set Up Cloudflare</h3>
+<ol>
+<li>Ensure your domain is active in Cloudflare.</li>
+<li>Add an <strong>A Record</strong> pointing to your VPS IP.</li>
+<li>The name can be anything you like.</li>
+<li>Ensure the proxy is <strong>enabled</strong>.</li>
+<li>Navigate to the <strong>SSL/TLS</strong> tab in Cloudflare:</li>
+<li>Change the mode to <strong>Full</strong> (not <strong>Full Strict</strong>).</li>
+</ol>
+<hr />
+<h2 id="youre-done">You're Done!</h2>
+<p>You can now configure your V2Ray client.</p>
+<blockquote>
+<p><strong>Tip:</strong> Refer to your client documentation or search online for configuration guides.</p>
+</blockquote>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
