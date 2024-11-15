@@ -29,7 +29,7 @@ The most popular setup is: `VLESS + CDN + WS + TLS`.
 
 ### Requirements
 - A domain name (e.g., via Cloudflare)
-- A VPS with port forwarding for 443 and a random port
+- A **Linux** VPS with port forwarding for 443 and a random port
   *(Web hosting services like Render or Koyeb can also work; they often include a domain and CDN.)*
 - Basic command-line skills
 
