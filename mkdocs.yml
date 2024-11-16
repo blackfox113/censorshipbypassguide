@@ -9,6 +9,8 @@ nav:
   - Home: "index.md" # This will be the homepage
   - Guide:
       - V2ray: "guide/V2ray.md"
+      - Hysteria 2: "guide/Hysteria.md"
+      - Local Bypass: "guide/Local.md"
       - VPN: "guide/VPN.md"
       - Kasm Workspaces: "guide/Kasm.md"
   - Support:
