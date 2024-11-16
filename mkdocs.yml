@@ -10,6 +10,7 @@ nav:
   - Server Side:
       - V2ray: "server/V2ray.md"
       - Hysteria 2: "server/Hysteria.md"
+      - Trojan: "server/trojan.md"
       - Kasm Workspaces: "server/Kasm.md"
       - Doge Unblocker: "server/Doge.md"
       - Local Bypass: "server/Local.md"
