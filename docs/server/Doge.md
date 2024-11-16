@@ -3,7 +3,7 @@
 
 Doge Unblocker is an advanced and neatly implemented web proxy using Ultraviolent technology. Among the many web proxies, this is standing out in design as well as usability.
  
-### **What is a Web Proxy?
+### **What is a Web Proxy?**
 
 The web proxy will enable you to visit various websites indirectly by redirecting your connection through a third-party server. While these web proxies are great to bypass restrictions in controlled environments, they support only web traffic.
 
