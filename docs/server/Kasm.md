@@ -1,4 +1,4 @@
-# **Kasm Workspaces Setup Guide**
+# Kasm Workspaces
 
 ## **What is Kasm Workspaces?**
 

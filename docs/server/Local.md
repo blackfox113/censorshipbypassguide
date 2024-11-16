@@ -1,6 +1,5 @@
 
-
-# Local Bypass Methods
+# Local Bypass
 
 > **Note:** These methods may only work in environments utilizing Deep Packet Inspection (DPI).
 

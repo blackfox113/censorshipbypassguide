@@ -1,4 +1,4 @@
-site_name: Censorship Bypass Guide
+site_name: Censorship Bypass server
 theme:
   name: terminal
 
@@ -7,12 +7,13 @@ features:
 
 nav:
   - Home: "index.md" # This will be the homepage
-  - Guide:
-      - V2ray: "guide/V2ray.md"
-      - Hysteria 2: "guide/Hysteria.md"
-      - Local Bypass: "guide/Local.md"
-      - VPN: "guide/VPN.md"
-      - Kasm Workspaces: "guide/Kasm.md"
+  - Server Side:
+      - V2ray: "server/V2ray.md"
+      - Hysteria 2: "server/Hysteria.md"
+      - Kasm Workspaces: "server/Kasm.md"
+      - Doge Unblocker: "server/Doge.md"
+      - Local Bypass: "server/Local.md"
+      - VPN: "server/VPN.md"
   - Support:
       - Support: "support/Support.md"
   - Misc:

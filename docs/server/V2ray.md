@@ -1,4 +1,4 @@
-# V2Ray Setup Guide
+# V2Ray
 
 ## What is V2Ray?
 

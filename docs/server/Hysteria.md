@@ -1,5 +1,5 @@
 
-# **Hysteria 2
+# Hysteria 2
 
 ## **What is Hysteria 2?**
 
