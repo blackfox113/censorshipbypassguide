@@ -1,5 +1,5 @@
 
-# **Hysteria 2: High-Speed Proxy Tool**
+# **Hysteria 2
 
 ## **What is Hysteria 2?**
 
