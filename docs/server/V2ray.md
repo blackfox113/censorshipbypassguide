@@ -2,65 +2,60 @@
 
 ## What is V2Ray?
 
-V2Ray is a robust proxy tool that enhances privacy, bypasses censorship, and supports multiple protocols. It encrypts internet traffic, ensuring secure and unrestricted browsing.
+V2Ray is a very powerful and privacy-enhancing proxy tool. It supports multiple protocols, can bypass the censorship of many countries, and traffic is fully encrypted, securing your internet use without restrictions.
 
-> **Note:** V2Ray is a protocol framework, not a server provider. You can either set up your own server or use a provider (often referred to as "机场" in Chinese).
-
+> **Note**: V2Ray itself is only a protocol framework but is not a provider of servers. You may want to either set up your server or subscribe to one, often referred to as "机场" in Chinese .
 ### Common Protocols:
 - **VLESS**: Lightweight and generally better for servers.
-- **VMESS**: More configurable with advanced features for bypassing strict censorship.
+- **VMESS**: can be configured with advanced features to bypass highly strict censorship.
 
-The most popular setup is: `VLESS + CDN + WS + TLS`.
+The most popular config is: `VLESS + CDN + WS + TLS`.
 
 ---
-
-### Explanation of Terms
+### Terms Explanation
 
 | Term   | Meaning                                                                 |
 |--------|-------------------------------------------------------------------------|
 | VLESS  | A protocol used in V2Ray configurations.                                |
 | WS     | WebSocket, an upgraded HTTP protocol supporting real-time data syncing. |
-| TLS    | Encryption protocol protecting data from being visible to firewalls.    |
-| CDN    | Content Delivery Network; caches content closer to users for speed and makes servers harder to block. |
+| TLS    | Encrypts data to not be visible to firewalls.    |
+| CDN    | Content Delivery Network; puts content closer to users for speed and makes blocking servers much more difficult. |
 
 ---
-
 ## Setup: **VLESS + CDN + WS + TLS**
 
 ### Requirements
-- A domain name with cloudflare
-- A **Linux** VPS with port forwarding for 443 and a random port
-  *(Web hosting services like Render or Koyeb can also work; they often include a domain and CDN.)*
-- Basic command-line skills
+* A domain name with cloudflare
+* A **Linux** VPS with port forwarding for 443 and a random port
+*(Other web hosting services like Render or Koyeb will also do; they provide a domain and CDN in most cases.)*
+- Basic command line skills
 - Root
 
 ---
-
 ### Install X-UI
-1. Run the following command to install **x-ui**:
-   ```bash
+1. To install **x-ui**, execute the following in a terminal:
+```bash
    bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)
-   ```
-   > Follow the instructions to install. Ensure you enable **system startup**.
+```
+   > To install, just follow on-screen instructions. Make sure you enable **system startup**.
 
 ---
-
 ### Disable Firewall
-If using a Debian-based distro:
+If you're using a Debian-based distro:
 
-1. Install `ufw` (if not already installed):
-   ```bash
+1. If `ufw` is not installed, install it:
+```bash
    sudo apt install ufw
-   ```
+```
 2. Disable the firewall:
-   ```bash
+```bash
    sudo ufw disable
-   ```
+```
 
 ---
 
 ### Access X-UI Panel
-1. Open your browser and navigate to:
+1. Open your browser and access the:
    ```
    http://<server-ip>:<port-you-set>
    ```
@@ -68,11 +63,11 @@ If using a Debian-based distro:
 
 ---
 
-### Set Up the VLESS Endpoint
-1. In the X-UI panel, click **"Inbounds"**.
-2. Click the **"+"** button to add a new inbound.
-3. Configure as follows:
-```plaintext
+### Configure VLESS Endpoint
+1. Tap "Inbounds".
+2. Click the **"+"** button to create a new inbound.
+3. Settings as below:
+```
    Remark: VLESS
    Protocol: vless
    Listening IP: (Leave Blank)
@@ -82,7 +77,7 @@ If using a Debian-based distro:
    Disable Insecure Encryption: False
    Transmission: ws
    Accept Proxy Protocol: False
-   Path: (Keep Default)
+   Path: keep default
    TLS: False
    Sniffing: True
 ```
@@ -91,22 +86,19 @@ If using a Debian-based distro:
 ---
 
 ### Forward Port 443
-1. Access your VPS control panel or router settings.
-2. Forward port **443**.
+1. Go to the control panel or router of your VPS.
+2. forward port **443**.
 
 ---
 
-### Set Up Cloudflare
-1. Ensure your domain is active in Cloudflare.
-2. Add an **A Record** pointing to your VPS IP.
-   - The name can be anything you like.
-   - Ensure the proxy is **enabled**.
-3. Navigate to the **SSL/TLS** tab in Cloudflare:
-   - Change the mode to **Full** (not **Full Strict**).
+### Configure Cloudflare
+1. Activate your domain in Cloudflare if you don't already have it.
+2. Set an **A Record** pointing to your VPS IP.  Make sure to turn on proxy.
+3. Go to **SSL/TLS** on Cloudflare:
+Switch to **Full** but do not enable **Full Strict**.
 
 ---
-
 ## You're Done!
-You can now configure your V2Ray client.
+Now you can configure your V2Ray client.
 
-> **Tip:** Refer to your client documentation or search online for configuration guides.
+> **Hint:** Check the documentation of your client or online for configuration.
