@@ -18,7 +18,7 @@
 
     
  
-<title>V2ray - Censorship Bypass Guide</title>
+<title>Trojan - Censorship Bypass Guide</title>
 
 
 <link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -162,7 +162,7 @@
         
     
 
-    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Guide</span>
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Server Side</span>
     
     
         
@@ -177,9 +177,89 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../V2ray/">V2ray</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Hysteria/">Hysteria 2</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
         <span class="
 
-    terminal-mkdocs-side-nav-item--active">V2ray</span>
+    terminal-mkdocs-side-nav-item--active">Trojan</span>
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Kasm/">Kasm Workspaces</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Doge/">Doge Unblocker</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Local/">Local Bypass</a>
+        
     
     </li>
             
@@ -301,6 +381,22 @@
     
     </li>
             
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../misc/licence/">Licence</a>
+        
+    
+    </li>
+            
             
     </ul>
         
@@ -312,135 +408,67 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#v2ray-setup-guide">V2Ray Setup Guide</a></li>
-        <li><a href="#what-is-v2ray">What is V2Ray?</a></li><li><a href="#setup-vless-cdn-ws-tls">Setup: VLESS + CDN + WS + TLS</a></li><li><a href="#youre-done">You're Done!</a></li>
+        <li><a href="#trojan">Trojan</a></li>
+        <li><a href="#what-is-trojan">What is Trojan?</a></li><li><a href="#key-terms">Key Terms</a></li><li><a href="#setting-up-trojan">Setting Up Trojan</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="v2ray-setup-guide">V2Ray Setup Guide</h1>
-<h2 id="what-is-v2ray">What is V2Ray?</h2>
-<p>V2Ray is a robust proxy tool that enhances privacy, bypasses censorship, and supports multiple protocols. It encrypts internet traffic, ensuring secure and unrestricted browsing.</p>
-<blockquote>
-<p><strong>Note:</strong> V2Ray is a protocol framework, not a server provider. You can either set up your own server or use a provider (often referred to as "机场" in Chinese).</p>
-</blockquote>
-<h3 id="common-protocols">Common Protocols:</h3>
-<ul>
-<li><strong>VLESS</strong>: Lightweight and generally better for servers.</li>
-<li><strong>VMESS</strong>: More configurable with advanced features for bypassing strict censorship.</li>
-</ul>
-<p>The most popular setup is: <code>VLESS + CDN + WS + TLS</code>.</p>
+    <h1 id="trojan">Trojan</h1>
+<h2 id="what-is-trojan"><strong>What is Trojan?</strong></h2>
+<p>Trojan is a powerful proxy tool designed to ensure secure, censorship-resistant communication. By mimicking HTTPS traffic, it becomes difficult for systems like the Great Firewall (GFW) to detect or block, offering private, unrestricted internet access for users.</p>
 <hr />
-<h3 id="explanation-of-terms">Explanation of Terms</h3>
+<h2 id="key-terms"><strong>Key Terms</strong></h2>
 <table>
 <thead>
 <tr>
-<th>Term</th>
-<th>Meaning</th>
+<th><strong>Term</strong></th>
+<th><strong>Definition</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>VLESS</td>
-<td>A protocol used in V2Ray configurations.</td>
+<td><strong>Trojan</strong></td>
+<td>A proxy tool that provides secure and censorship-resistant communication.</td>
 </tr>
 <tr>
-<td>WS</td>
-<td>WebSocket, an upgraded HTTP protocol supporting real-time data syncing.</td>
+<td><strong>Proxy Tool</strong></td>
+<td>Software that intermediates between a client and a server, often used for anonymity or bypassing restrictions.</td>
 </tr>
 <tr>
-<td>TLS</td>
-<td>Encryption protocol protecting data from being visible to firewalls.</td>
+<td><strong>Secure Communication</strong></td>
+<td>Methods of exchanging data that prevent unauthorized access or interception.</td>
 </tr>
 <tr>
-<td>CDN</td>
-<td>Content Delivery Network; caches content closer to users for speed and makes servers harder to block.</td>
+<td><strong>Censorship-Resistant</strong></td>
+<td>Designed to bypass internet censorship and provide unrestricted access to content.</td>
+</tr>
+<tr>
+<td><strong>Mimics HTTPS Traffic</strong></td>
+<td>Imitates secure web traffic to appear as standard HTTPS, avoiding detection by censorship systems.</td>
+</tr>
+<tr>
+<td><strong>GFW (Great Firewall)</strong></td>
+<td>A colloquial term referring to China's internet censorship and surveillance system.</td>
+</tr>
+<tr>
+<td><strong>Detect and Block</strong></td>
+<td>The process used by systems like the GFW to identify and restrict specific network traffic.</td>
+</tr>
+<tr>
+<td><strong>Private Internet Access</strong></td>
+<td>Secure, anonymous browsing that protects user identity and data online.</td>
+</tr>
+<tr>
+<td><strong>Unrestricted Internet Access</strong></td>
+<td>The ability to browse and access content online without censorship or limitations.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="setup-vless-cdn-ws-tls">Setup: <strong>VLESS + CDN + WS + TLS</strong></h2>
-<h3 id="requirements">Requirements</h3>
-<ul>
-<li>A domain name (e.g., via Cloudflare)</li>
-<li>A <strong>Linux</strong> VPS with port forwarding for 443 and a random port
-  <em>(Web hosting services like Render or Koyeb can also work; they often include a domain and CDN.)</em></li>
-<li>Basic command-line skills</li>
-</ul>
-<hr />
-<h3 id="install-x-ui">Install X-UI</h3>
-<ol>
-<li>Run the following command to install <strong>x-ui</strong>:
-   <code>bash
-   bash &lt;(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)</code><blockquote>
-<p>Follow the instructions to install. Ensure you enable <strong>system startup</strong>.</p>
-</blockquote>
-</li>
-</ol>
-<hr />
-<h3 id="disable-firewall">Disable Firewall</h3>
-<p>If using a Debian-based distro:</p>
-<ol>
-<li>Install <code>ufw</code> (if not already installed):
-   <code>bash
-   sudo apt install ufw</code></li>
-<li>Disable the firewall:
-   <code>bash
-   sudo ufw disable</code></li>
-</ol>
-<hr />
-<h3 id="access-x-ui-panel">Access X-UI Panel</h3>
-<ol>
-<li>Open your browser and navigate to:
-   <code>http://&lt;server-ip&gt;:&lt;port-you-set&gt;</code></li>
-<li>Log in with your credentials.</li>
-</ol>
-<hr />
-<h3 id="set-up-the-vless-endpoint">Set Up the VLESS Endpoint</h3>
-<ol>
-<li>In the X-UI panel, click <strong>"Inbounds"</strong>.</li>
-<li>Click the <strong>"+"</strong> button to add a new inbound.</li>
-<li>Configure as follows:</li>
-</ol>
-<pre><code class="language-plaintext">   Remark: VLESS
-   Protocol: vless
-   Listening IP: (Leave Blank)
-   Port: 443
-   Total Traffic (GB): (Leave Blank)
-   Expiry Date: (Leave Blank)
-   Disable Insecure Encryption: False
-   Transmission: ws
-   Accept Proxy Protocol: False
-   Path: (Keep Default)
-   TLS: False
-   Sniffing: True
-</code></pre>
-<ol>
-<li>Click <strong>"Add To"</strong> to save.</li>
-</ol>
-<hr />
-<h3 id="forward-port-443">Forward Port 443</h3>
-<ol>
-<li>Access your VPS control panel or router settings.</li>
-<li>Forward port <strong>443</strong>.</li>
-</ol>
-<hr />
-<h3 id="set-up-cloudflare">Set Up Cloudflare</h3>
-<ol>
-<li>Ensure your domain is active in Cloudflare.</li>
-<li>Add an <strong>A Record</strong> pointing to your VPS IP.</li>
-<li>The name can be anything you like.</li>
-<li>Ensure the proxy is <strong>enabled</strong>.</li>
-<li>Navigate to the <strong>SSL/TLS</strong> tab in Cloudflare:</li>
-<li>Change the mode to <strong>Full</strong> (not <strong>Full Strict</strong>).</li>
-</ol>
-<hr />
-<h2 id="youre-done">You're Done!</h2>
-<p>You can now configure your V2Ray client.</p>
-<blockquote>
-<p><strong>Tip:</strong> Refer to your client documentation or search online for configuration guides.</p>
-</blockquote>
+<h2 id="setting-up-trojan"><strong>Setting Up Trojan</strong></h2>
+<p>A step-by-step setup guide is coming soon. Stay tuned!</p>
 </section>
 
             </main>
