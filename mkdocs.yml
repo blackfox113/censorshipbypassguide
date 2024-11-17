@@ -18,5 +18,6 @@ nav:
   - Support:
       - Support: "support/Support.md"
   - Misc:
+      - Safety: "misc/safety.md"
       - Contacts: "misc/contacts.md"
       - Licence: "misc/licence.md"
