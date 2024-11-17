@@ -1,6 +1,7 @@
 site_name: Censorship Bypass Guide
 theme:
   name: terminal
+  palette: dark
 
 features:
   - navigation.side.indexes
