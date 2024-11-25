@@ -20,3 +20,4 @@ Using a VPN or proxy always carries risks. Depending on your location, it could 
 
 1. **Avoid online banking:** Be cautious when accessing sensitive financial information over a VPN or proxy.
 2. **Understand traffic visibility:** VPN or proxy servers can see some of your data, so only use trusted services.
+2.
