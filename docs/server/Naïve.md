@@ -21,7 +21,6 @@ NaïveProxy is a very simple and high-performance solution aimed at circumventin
 #### **Prerequisites**
 - **Domain Name:** Managed via Cloudflare (or similar DNS service).
 - **Linux VPS:** Ensure ports **443** and **80** are open and forwarded.
-  *(Alternatively, services like Render or Koyeb, which offer domain and CDN support, can work.)*
 - **Basic Requirements:**
   - Basic command-line knowledge.
   - Root access to the server.
