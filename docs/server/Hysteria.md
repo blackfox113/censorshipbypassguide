@@ -1,118 +1,136 @@
 # Hysteria 2
-## **What is Hysteria 2?**
-
-Hysteria 2 is a professional proxy tool designed for ultra-fast, secure connections to the Internet. It features a **QUIC transport protocol** that offers better speed, reliability, and efficiency. Because it was designed with bypassing censorship in mind, it comes with **UDP-based acceleration** and **flexible encryption**, among other features that make it perfect for applications that require low latency and high performance, such as gaming and streaming, among other resource-intensive applications. Yet, Hysteria 2 manages to remain lightweight and easy to deploy, thus fitting both the novice and the expert.
 
 ---
-**Explaining Key Terms
 
-| **Term**                   | **Definition**                                                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| **Hysteria 2**             | Advanced modern proxy for high-speed, secure, and reliable internet connections.                                       |
-| **QUIC**                   | A next-generation transport protocol designed to accelerate and guarantee reliability in data transfer.                |
-| **Circumventing Censorship** | Allows accessing restricted content by bypassing various internet censorship mechanisms.                              |
-| **UDP-based Acceleration** | Employs UDP for faster data transfers, surpassing traditional TCP-based systems.                                       |
-| **Flexible Encryption**    | Adapts secure and private communications by allowing you to choose an encryption method that suits your needs.         |
-| **Low-latency Applications** | Applications that require minimal delay, such as online gaming or live streaming.                                     |
-| **High-performance Applications** | Applications that require high speed and reliability, including large file transfers or extensive streaming.    |
-| **Lightweight**            | Indicates how Hysteria 2 uses fewer resources, allowing it to run smoothly on a variety of devices.                   |
-| **Easy to Deploy**         | Features an easy setup process that requires little time or technical expertise.                                       |
+## 📘 What is Hysteria 2?
 
-
-## **Key Benefits**
-
-1. **Very Fast**: Reaches high connection speeds using advanced acceleration methodologies.
-2. **Ease of Deployment:** Setup is easy and quick.
-3. **QUIC-Based**: It bases on QUIC, which provides great throughput and strong reliability.
-4. **Lightweight:** It is lightweight due to its careful optimization in minimizing resource usage.
-5. **Featureful:** It has features to fit various use cases with encryption and censorship bypass.
+**Hysteria 2** is a professional proxy tool optimized for ultra-fast, secure, and censorship-resistant Internet connections. It utilizes the **QUIC transport protocol**, offering enhanced speed, reliability, and efficiency. With **UDP-based acceleration**, **flexible encryption**, and a lightweight footprint, Hysteria 2 excels in low-latency, high-performance scenarios like gaming, streaming, and large file transfers. Despite its power, it remains easy to deploy—ideal for both beginners and advanced users.
 
 ---
-## **Installing Hysteria 2 on a Debian-based VPS**
 
-### **Requirements**
+## 📖 Key Terminology
 
-* **Linux VPS** forwarded with port 443
-* Basic knowledge of the command line
+| **Term**                    | **Definition**                                                                                                  |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Hysteria 2**              | A high-speed, secure proxy designed for reliable Internet access, even in censored environments.               |
+| **QUIC**                    | A modern transport protocol that improves data transfer speed and reliability over UDP.                        |
+| **Circumventing Censorship**| Enables access to restricted or censored content online.                                                       |
+| **UDP-based Acceleration**  | Utilizes UDP to achieve faster speeds compared to traditional TCP connections.                                 |
+| **Flexible Encryption**     | Allows customizable encryption to suit privacy and security requirements.                                      |
+| **Low-latency Applications**| Use cases like gaming or live streaming where response time is critical.                                       |
+| **High-performance Apps**   | Tasks needing fast and reliable data transfer (e.g., large file uploads/downloads, HD streaming).              |
+| **Lightweight**             | Minimal resource usage makes it suitable for a wide range of systems.                                          |
+| **Easy to Deploy**          | Simplified installation and configuration process.                                                             |
+
+---
+
+## 🌟 Key Benefits
+
+1. **Blazing Fast** – Achieves high connection speeds through QUIC and UDP acceleration.
+2. **Easy to Deploy** – Quick setup suitable for users of all skill levels.
+3. **QUIC-Based** – Leverages modern transport protocols for improved performance.
+4. **Lightweight** – Optimized to use minimal system resources.
+5. **Feature-Rich** – Includes advanced encryption and censorship evasion options.
+
+---
+
+## 🖥️ Installing Hysteria 2 on Debian-based VPS
+
+### ✅ Requirements
+
+- A Linux VPS (port **443** must be open and forwarded)
 - Root access
+- Basic command-line knowledge
 - A text editor
 
 ---
-### Step 1: Become Root**
-Switch to the root user with the following command:
+
+### 🔧 Step 1: Become Root
+
+Switch to the root user:
 ```bash
 sudo -s
 ```
+
 ---
-### Step 2: Install Hysteria 2
-Download and install Hysteria 2 with the following command:
+
+### 🔧 Step 2: Install Hysteria 2
+
+Run the official install script:
 ```bash
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
+
 ---
-### Step 3: Request a Certificate
-Generate SSL/TLS certificates, which are used to ensure the security of communications:
+
+### 🔐 Step 3: Generate SSL/TLS Certificate
+
+Use OpenSSL to create a self-signed certificate:
 ```bash
-openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=https://pan.baidu.com" -days 36500 && \
+openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) \
+  -keyout /etc/hysteria/server.key \
+  -out /etc/hysteria/server.crt \
+  -subj "/CN=https://pan.baidu.com" -days 36500
 ```
-```
-sudo chown hysteria /etc/hysteria/server.key && \
-```
-```
+
+Set correct permissions:
+```bash
+sudo chown hysteria /etc/hysteria/server.key
 sudo chown hysteria /etc/hysteria/server.crt
 ```
+
+> 📝 **Note**: Replace the CN with a suitable masquerade domain if needed.
+
 ---
 
-### Step 4: Enable and Start Hysteria 2**
+### 🛠️ Step 4: Start Hysteria 2
 
-Start the service:
-
+Start the server:
 ```bash
 systemctl start hysteria-server.service
 ```
-Enable the service to start on boot:
 
+Enable it to run on boot:
 ```bash
 systemctl enable hysteria-server.service
 ```
+
 ---
 
-### Step 5: Configure Hysteria**
+### ⚙️ Step 5: Configure Hysteria 2
 
-Create the configuration file:
-
+Create the config file:
 ```bash
 cat << EOF > /etc/hysteria/config.yaml
 listen: :443
 tls:
-
   cert: /etc/hysteria/server.crt
   key: /etc/hysteria/server.key
 auth:
-
   type: password
-  password: 123456 # Change this password
+  password: 123456  # Change this!
 masquerade:
-
   type: proxy
   proxy:
-    url: https://pan.baidu.com # Replace with a suitable SNI-fake site
+    url: https://pan.baidu.com  # Replace with another SNI front if needed
 rewriteHost: true
 EOF
 ```
-> **Note:** Replace the password with a secure one.
+
+> 🔐 **Important**: Replace the password with a secure one.
 
 ---
 
-### Step 6: Apply Configuration**
+### 🔄 Step 6: Apply Configuration
 
-Restart the Hysteria server to apply the configuration changes:
-
+Restart the server to apply changes:
 ```bash
 systemctl restart hysteria-server.service
 ```
+
 ---
 
-### You're All Done!
+## ✅ Final Step
 
-Your Hysteria 2 server is up and running. Please follow the client configuration for your device to begin using the proxy service.
+Your **Hysteria 2** proxy server is now live!
+Set up your client device using the domain and password you configured to start using the service.

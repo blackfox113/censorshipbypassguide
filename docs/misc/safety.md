@@ -8,7 +8,7 @@ Using a VPN or proxy always carries risks. Depending on your location, it could 
 
 ### For Users Bypassing the Chinese GFW (Great Firewall):
 
-1. **Avoid Chinese email services:** Providers like QQ Mail or 163 Mail may be accessible to authorities. Opt for more secure services like Gmail for activities that are restricted in China.
+1. **Avoid Chinese email services:** Providers like QQ Mail or 163 Mail may be accessible to authorities. Opt for more secure services like Proton Mail for activities that are restricted in China.
 2. **Do not use Chinese phone numbers:** These can be easily traced or monitored.
 3. **Steer clear of extreme political discussions:** Avoid engaging in sensitive or highly controversial topics.
 4. **Avoid personal identifiers:** Refrain from using Chinese names, real-life profile pictures, or other personal information.

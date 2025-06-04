@@ -1,132 +1,136 @@
-# NaïveProxy
+# NaïveProxy Setup Guide
 
 ---
 
-## **Definition of NaïveProxy**
+## 📘 Definition of NaïveProxy
 
-NaïveProxy is a very simple and high-performance solution aimed at circumventing clamping of Internet resources. The tool can support such features as HTTP/2 or HTTP/3 and in the process also appear itself in the same way as simple surfing. This concept is executed based on Chromium and integrates TLS encryption thus providing a secure and covert connection. The ease of use, low ping and effectiveness make it a perfect tool to avoid prohibitions in a way that received no questions.
-
----
-
-## **What Other Features Make NaïveProxy So Exceptional and Why?**
-
-- **TLS Fingerprint Masking**: NaïveProxy employs the Chromium library to implement its transport, making it impossible for detection systems to distinguish the TLS client fingerprint from regular web browsers. Every case of using a proxy server in such detection scenarios is disguised to erase the usage evidence.
-- **It’s Really Affordable**: It’s very quick and simple to get NaïveProxy, even for those who are not good with technology.
-
+**NaïveProxy** is a lightweight, high-performance tool designed to circumvent internet censorship. It supports HTTP/2 and HTTP/3 while appearing like regular web traffic. Built on Chromium and integrated with TLS encryption, it ensures a secure and stealthy connection. Its simplicity, low latency, and efficiency make it an ideal solution for bypassing restrictions without raising suspicion.
 
 ---
 
-### Setting Up NaïveProxy with Caddy
+## 🚀 Why NaïveProxy Stands Out
 
-#### **Prerequisites**
-- **Domain Name:** Managed via Cloudflare (or similar DNS service).
-- **Linux VPS:** Ensure ports **443** and **80** are open and forwarded.
-- **Basic Requirements:**
-  - Basic command-line knowledge.
-  - Root access to the server.
+- **TLS Fingerprint Masking**: Uses Chromium’s TLS stack, making proxy usage indistinguishable from a normal browser session.
+- **User-Friendly & Accessible**: Easy to install, even for users with limited technical experience.
 
 ---
 
-### **Setup Steps**
+## ⚙️ Setting Up NaïveProxy with Caddy
 
-#### **1. Switch to Root User**
-To simplify commands, elevate to root:
+### ✅ Prerequisites
+
+- **Domain Name**: Managed via Cloudflare or equivalent DNS provider.
+- **Linux VPS**: Ensure ports **443** and **80** are open.
+- **Basic Requirements**:
+  - Basic command-line knowledge
+  - Root access to the server
+
+---
+
+## 🛠️ Setup Steps
+
+### 1. Switch to Root User
 ```bash
 sudo -s
 ```
 
-#### **2. Update System Packages**
-Ensure your system packages are up to date:
+### 2. Update System Packages
 ```bash
 apt update
 ```
 
-#### **3. Install Go Dependencies**
-Install necessary tools and add the Golang backports repository:
+### 3. Install Go Dependencies
 ```bash
 apt-get install software-properties-common
-sudo add-apt-repository ppa:longsleep/golang-backports
-sudo apt-get update
-sudo apt-get install golang-go
+add-apt-repository ppa:longsleep/golang-backports
+apt-get update
+apt-get install golang-go
 ```
 
-#### **4. Install Caddy**
-Use `xcaddy` to install Caddy:
+### 4. Install Caddy via `xcaddy`
 ```bash
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 ```
 
-#### **5. Build Caddy with NaïveProxy**
-Build Caddy with the required plugin for NaïveProxy:
+### 5. Build Caddy with NaïveProxy Plugin
 ```bash
-~/go/bin/xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwardproxy@naive
+~/go/bin/xcaddy build \
+  --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwardproxy@naive
 ```
 
 ---
 
-### **Configuration**
+## 📝 Configuration
 
-#### **6. Create Caddy Configuration File**
-Open a text editor and input the following configuration. Replace placeholders like `your-domain.com` and `your-email@example.com` with your actual values:
-```plaintext
-:443, your-domain.com  # Your domain name
-tls your-email@example.com  # Your email
+### 6. Create the Caddyfile
+
+Edit a new file named `Caddyfile` with the following contents. Replace placeholders:
+
+```caddyfile
+:443, your-domain.com
+tls your-email@example.com
+
 route {
   forward_proxy {
-    basic_auth username password  # Set your username and password
+    basic_auth username password
     hide_ip
     hide_via
     probe_resistance
   }
-  reverse_proxy https://example.com {  # Fake site (e.g., Baidu)
+
+  reverse_proxy https://example.com {
     header_up Host {upstream_hostport}
     header_up X-Forwarded-Host {host}
   }
 }
 ```
 
-Save this configuration as `Caddyfile` (case-sensitive).
+> 🛑 **Note:** Replace `your-domain.com`, `your-email@example.com`, `username`, `password`, and `https://example.com` with real values.
 
 ---
 
-### **Caddy Commands**
-- **Start in Foreground:**
+## 🧪 Caddy Commands
+
+- **Run in Foreground**:
   ```bash
   ./caddy run
   ```
-- **Start in Background:**
+
+- **Run in Background**:
   ```bash
   ./caddy start
   ```
-- **Stop:**
+
+- **Stop**:
   ```bash
   ./caddy stop
   ```
-- **Reload Configurations:**
+
+- **Reload Configuration**:
   ```bash
   ./caddy reload
   ```
 
 ---
 
-### **7. Install Configuration**
-Run the following command to start Caddy and generate SSL certificates automatically:
+## 🚦 Launch & Finalize
+
+### 7. Generate SSL Certificates
 ```bash
 ./caddy run
 ```
-- Ensure ports **443** and **80** are forwarded correctly.
-- Once the SSL certificate is obtained, stop Caddy with `Ctrl + C` if running in the foreground.
+> Let it run to complete SSL generation. Then stop it using `Ctrl + C`.
 
 ---
 
-### **8. Start NaïveProxy**
-To start NaïveProxy in the background, run:
+### 8. Start NaïveProxy in Background
 ```bash
 ./caddy start
 ```
-This version of Caddy already includes NaïveProxy.
 
 ---
 
-### **Final Step**
-Your setup is complete! Configure your client to connect to the server using the credentials and domain you set up.
+## 🎉 Final Step
+
+Your NaïveProxy server is now live!
+Configure your client to use the domain, username, and password you specified.
