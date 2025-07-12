@@ -92,21 +92,25 @@ route {
 ## 🧪 Caddy Commands
 
 - **Run in Foreground**:
+
   ```bash
   ./caddy run
   ```
 
 - **Run in Background**:
+
   ```bash
   ./caddy start
   ```
 
 - **Stop**:
+
   ```bash
   ./caddy stop
   ```
 
 - **Reload Configuration**:
+
   ```bash
   ./caddy reload
   ```
@@ -133,4 +137,4 @@ route {
 ## 🎉 Final Step
 
 Your NaïveProxy server is now live!
-Configure your client to use the domain, username, and password you specified.
+Configure your client to use the domain, username, and password you specified with port 443. Make sure you put domain in Server Name Indication (SNI). Rest is default
