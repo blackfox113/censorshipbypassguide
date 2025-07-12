@@ -10,4 +10,6 @@ Example:
 
 Most of these countries and organizations do not just block VPNs and proxy services they block only the most popular ones so in order to gain a more secure and reliable access it is also advisable that you have your own proxy or VPN server set up.
 
+Free subdomains can be used for these proxies, found here [DigitalPlat](https://dash.domain.digitalplat.org)
+
 > Warning: Please note that any damage that may be incurred while practicing censorship regulations is not the responsibility of this organization. This tutorial is for informational purposes only.

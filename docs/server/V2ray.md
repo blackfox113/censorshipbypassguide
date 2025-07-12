@@ -69,7 +69,7 @@ If you're using a Debian-based distro:
 3. Settings as below:
 ```
    Remark: VLESS
-   Protocol: vless
+   Protocol: vless or vmess (encrypted)
    Listening IP: (Leave Blank)
    Port: 443
    Total Traffic (GB): (Leave Blank)
@@ -99,6 +99,6 @@ Switch to **Full** but do not enable **Full Strict**.
 
 ---
 ## You're Done!
-Now you can configure your V2Ray client.
+Click **Operate** on your inbound on X-UI and click **QR Code**. You can use this QR code to import to your client or click the QR to copy share link to clipboard
 
 > **Hint:** Check the documentation of your client or online for configuration.
