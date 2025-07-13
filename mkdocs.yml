@@ -16,11 +16,10 @@ nav:
       - Kasm Workspaces: "Server/Kasm.md"
       - Doge Unblocker: "Server/Doge.md"
       - VPN: "Server/VPN.md"
-  - Clients:
-      - Clients: "Clients/Clients.md"
-  - GitHub Source:
-      - Github Source: "GitHub Source/GitHub.md"
+  - Client Side:
+      - Client Side: "Client Side/Clients.md"
   - Misc:
+      - Github Source: "Misc/GitHub.md"
       - Safety Note: "Misc/safety.md"
       - Contacts: "Misc/contacts.md"
       - Licence: "Misc/licence.md"
