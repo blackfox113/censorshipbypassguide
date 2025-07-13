@@ -1,5 +1,9 @@
 # V2Ray
 
+### I’ve opened a thread where we’re discussing setups, country-specific blocks, and tips for better performance.
+
+[Join the V2Ray discussion](https://forum.7844380499.cfd/posts/general-v2ray-discussion/#Default){ .btn .btn-default }
+
 ## What is V2Ray?
 
 V2Ray is a very powerful and privacy-enhancing proxy tool. It supports multiple protocols, can bypass the censorship of many countries, and traffic is fully encrypted, securing your internet use without restrictions.
@@ -76,7 +80,7 @@ This will be shown to you after launching X-UI with `sudo x-ui`
    Total Traffic (GB): blank (default)
    Expiry Date: blank (default)
    Disable Insecure Encryption: Disabled (default)
-   Transmission: ws 
+   Transmission: ws
    Accept Proxy Protocol: Disabled (default)
    TLS: Enable
    SNI: Your domain name

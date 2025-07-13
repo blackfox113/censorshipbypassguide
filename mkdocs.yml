@@ -6,6 +6,10 @@ theme:
 features:
   - navigation.side.indexes
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 nav:
   - Home: "index.md" # Homepage
   - Server Side:
