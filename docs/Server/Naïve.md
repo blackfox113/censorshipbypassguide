@@ -89,26 +89,28 @@ route {
 
 ---
 
-## Useful Caddy Commands
+## Caddy Commands
 
-To run Caddy in different ways:
+- **Run in the foreground**
 
-- **Run in the foreground**:
   ```bash
   ./caddy run
   ```
 
-- **Run in the background**:
+- **Run in the background**
+
   ```bash
   ./caddy start
   ```
 
-- **Stop it**:
+- **Stop server**
+
   ```bash
   ./caddy stop
   ```
 
-- **Reload the configuration**:
+- **Reload the configuration**
+
   ```bash
   ./caddy reload
   ```
