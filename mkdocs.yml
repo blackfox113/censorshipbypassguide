@@ -7,18 +7,20 @@ features:
   - navigation.side.indexes
 
 nav:
-  - Home: "index.md" # This will be the homepage
+  - Home: "index.md" # Homepage
   - Server Side:
-      - V2ray: "server/V2ray.md"
-      - Hysteria 2: "server/Hysteria.md"
-      - NaïveProxy: "server/Naïve.md"
-      - Trojan: "server/trojan.md"
-      - Kasm Workspaces: "server/Kasm.md"
-      - Doge Unblocker: "server/Doge.md"
-      - VPN: "server/VPN.md"
-  - Support:
-      - Support: "support/Support.md"
+      - V2ray: "Server/V2ray.md"
+      - Hysteria 2: "Server/Hysteria.md"
+      - NaïveProxy: "Server/Naïve.md"
+      - Trojan: "Server/Trojan.md"
+      - Kasm Workspaces: "Server/Kasm.md"
+      - Doge Unblocker: "Server/Doge.md"
+      - VPN: "Server/VPN.md"
+  - Clients:
+      - Clients: "Clients/Clients.md"
+  - GitHub Source:
+      - Github Source: "GitHub Source/GitHub.md"
   - Misc:
-      - Safety: "misc/safety.md"
-      - Contacts: "misc/contacts.md"
-      - Licence: "misc/licence.md"
+      - Safety Note: "Misc/safety.md"
+      - Contacts: "Misc/contacts.md"
+      - Licence: "Misc/licence.md"

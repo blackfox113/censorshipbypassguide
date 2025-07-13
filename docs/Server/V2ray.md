@@ -59,7 +59,8 @@ If you're using a Debian-based distro:
    ```
    http://<server-ip>:<port-you-set>
    ```
-2. Log in with your credentials.
+This will be shown to you after launching X-UI with `sudo x-ui`
+2. Log in with the credentials.
 
 ---
 
@@ -68,18 +69,18 @@ If you're using a Debian-based distro:
 2. Click the **"+"** button to create a new inbound.
 3. Settings as below:
 ```
-   Remark: VLESS
-   Protocol: vless or vmess (encrypted)
-   Listening IP: (Leave Blank)
+   Remark: Name your server
+   Protocol: vless / vmess (encrypted)
+   Listening IP: blank (default)
    Port: 443
-   Total Traffic (GB): (Leave Blank)
-   Expiry Date: (Leave Blank)
-   Disable Insecure Encryption: False
-   Transmission: ws
-   Accept Proxy Protocol: False
-   Path: keep default
-   TLS: False
-   Sniffing: True
+   Total Traffic (GB): blank (default)
+   Expiry Date: blank (default)
+   Disable Insecure Encryption: Disabled (default)
+   Transmission: ws 
+   Accept Proxy Protocol: Disabled (default)
+   TLS: Enable
+   SNI: Your domain name
+   Sniffing: Enabled (default)
 ```
 4. Click **"Add To"** to save.
 
@@ -93,9 +94,9 @@ If you're using a Debian-based distro:
 
 ### Configure Cloudflare
 1. Activate your domain in Cloudflare if you don't already have it.
-2. Set an **A Record** pointing to your VPS IP.  Make sure to turn on proxy.
+2. Set an **A Record** pointing to your VPS public IP.  Make sure to turn on proxy.
 3. Go to **SSL/TLS** on Cloudflare:
-Switch to **Full** but do not enable **Full Strict**.
+Make sure it is on **Full**, not **Full Strict**.
 
 ---
 ## You're Done!
