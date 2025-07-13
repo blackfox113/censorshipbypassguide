@@ -92,24 +92,24 @@ route {
 ## Caddy Commands
 
 ### Run in the foreground
-  ```bash
-  ./caddy run
-  ```
+```bash
+./caddy run
+```
 
 ### Run in the background
-  ```bash
-  ./caddy start
-  ```
+```bash
+./caddy start
+```
 
 ### Stop server
-  ```bash
-  ./caddy stop
-  ```
+```bash
+./caddy stop
+```
 
 ### Reload the configuration
-  ```bash
-  ./caddy reload
-  ```
+```bash
+./caddy reload
+```
 
 ---
 
