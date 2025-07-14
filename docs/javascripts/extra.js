@@ -1,52 +1,57 @@
-// docs/javascripts/extra.js
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Define your social image URL - REPLACE THIS WITH THE ACTUAL DIRECT LINK FROM CATBOX
-  const socialImageUrl = "https://files.catbox.moe/renxy1.png"; // e.g., 'https://files.catbox.moe/abcdef.jpg'
+  const head = document.head;
 
-  // Define your embed text description
-  // This description should complement the image and be concise.
-  const socialDescription =
-    "A guide to install censorship circumvention tools.";
-
-  // Function to create and append meta tags (remains the same)
-  function createMetaTag(property, content, name = null) {
-    let meta = document.createElement("meta");
-    if (property) {
-      meta.setAttribute("property", property);
+  // Helper function to create and append meta tags
+  function addMeta(attrs) {
+    const meta = document.createElement("meta");
+    for (const [key, value] of Object.entries(attrs)) {
+      meta.setAttribute(key, value);
     }
-    if (name) {
-      meta.setAttribute("name", name);
-    }
-    meta.setAttribute("content", content);
-    document.head.appendChild(meta);
+    head.appendChild(meta);
   }
 
-  // Open Graph (Facebook, LinkedIn, etc.)
-  createMetaTag("og:image", socialImageUrl);
-  createMetaTag("og:image:width", "1200"); // Set to your image's width (assuming 1200)
-  createMetaTag("og:image:height", "630"); // Set to your image's height (assuming 630)
-  createMetaTag(
-    "og:image:alt",
-    'Wolf silhouette with text "Access Freely Bypass Censorship"',
-  ); // IMPORTANT for accessibility
-  createMetaTag("og:description", socialDescription);
+  // Basic SEO
+  addMeta({
+    name: "description",
+    content: "A guide to deploy your own censorship circumvention tools.",
+  });
+  addMeta({ name: "author", content: "Zenith Rifle" });
+  addMeta({ name: "robots", content: "index, follow" });
 
-  // Twitter Card
-  createMetaTag("twitter:card", "summary_large_image", "twitter:card");
-  createMetaTag("twitter:image", socialImageUrl, "twitter:image");
-  createMetaTag(
-    "twitter:image:alt",
-    'Wolf silhouette with text "Access Freely Bypass Censorship"',
-    "twitter:image:alt",
-  ); // IMPORTANT for accessibility
-  createMetaTag(
-    "twitter:description",
-    socialDescription,
-    "twitter:description",
-  );
+  // Open Graph
+  addMeta({ property: "og:title", content: document.title });
+  addMeta({
+    property: "og:description",
+    content: "A fox with a text Access Freely, Bypass Censorship.",
+  });
+  addMeta({ property: "og:type", content: "website" });
+  addMeta({ property: "og:url", content: window.location.href });
+  addMeta({
+    property: "og:image",
+    content: "https://files.catbox.moe/1mcjvr.png",
+  });
 
-  // You might also want to set a consistent title if MkDocs' default doesn't quite fit:
-  // createMetaTag('og:title', 'Your Site Name Here: Access Freely');
-  // createMetaTag('twitter:title', 'Your Site Name Here: Access Freely', 'twitter:title');
+  // Twitter Cards
+  addMeta({ name: "twitter:card", content: "summary_large_image" });
+  addMeta({ name: "twitter:title", content: document.title });
+  addMeta({
+    name: "twitter:description",
+    content: "A guide to deploy your own censorship circumvention tools.",
+  });
+  addMeta({
+    name: "twitter:image",
+    content: "https://files.catbox.moe/1mcjvr.png",
+  });
+
+  // Canonical link
+  const linkCanonical = document.createElement("link");
+  linkCanonical.rel = "canonical";
+  linkCanonical.href = window.location.href;
+  head.appendChild(linkCanonical);
+
+  // Optional: favicon
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.href = "/favicon.ico";
+  head.appendChild(favicon);
 });
