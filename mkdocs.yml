@@ -4,6 +4,9 @@ theme:
   palette: dark
   custom_dir: overrides
 
+extra_css:
+  - css/custom.css
+
 features:
   - navigation.side.indexes
 
@@ -31,6 +34,3 @@ nav:
       - Safety Note: "Misc/safety.md"
       - Contacts: "Misc/contacts.md"
       - Licence: "Misc/licence.md"
-
-extra:
-  current_year: !ENV [YEAR, 2025]
