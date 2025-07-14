@@ -31,3 +31,6 @@ nav:
       - Safety Note: "Misc/safety.md"
       - Contacts: "Misc/contacts.md"
       - Licence: "Misc/licence.md"
+
+extra:
+  current_year: !ENV [YEAR, 2025]
