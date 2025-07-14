@@ -24,7 +24,7 @@ nav:
       - Doge Unblocker: "Server/Doge.md"
       - VPN: "Server/VPN.md"
   - Client Side:
-      - Client Side: "Client Side/Clients.md"
+      - Clients: "Client Side/Clients.md"
   - Misc:
       - Website Source Code: "https://github.com/eli32-vlc/censorshipbypassguide"
       - Gateway: "https://censordex.fr.to"
