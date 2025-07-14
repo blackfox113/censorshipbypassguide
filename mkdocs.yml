@@ -2,6 +2,7 @@ site_name: Censorship Bypass Guide
 theme:
   name: terminal
   palette: dark
+  custom_dir: overrides
 
 features:
   - navigation.side.indexes
@@ -9,9 +10,6 @@ features:
 markdown_extensions:
   - attr_list
   - md_in_html
-
-extra_javascript:
-  - javascripts/extra.js
 
 nav:
   - Home: "index.md" # Homepage
