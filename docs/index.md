@@ -44,4 +44,6 @@ AI is used throughout the guide only to help with spelling and grammar. Me and W
 
 Free subdomains can be used for these proxies, found here: [DigitalPlat](https://dash.domain.digitalplat.org).
 
+(We don't get paid we just like the service and I use it my self.)
+
 > **Warning:** We are not responsible for any damages that may occur while attempting censorship circumvention. This guide exists as an educational resource for people to learn about censorship.
