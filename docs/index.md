@@ -1,15 +1,25 @@
 # Introduction
 
-This information will give such details, wherein the issue at hand is the bypassing of Internet censorship as it is practiced by governments, school educators, business employers, etc. There is the thing that everybody has heard called proxies, VPN servers, and probably more tools that me as a person have no idea of but will learn in this text.
+![Banner](https://files.catbox.moe/1mcjvr.png)
 
-In the majority of cases, what is referred to as the most effective ways of dealing with the issue of web censorship is the use of a proxy server. Basically, the proxy server allows you to access information that is geo-restricted and has been banned by the censoring body through a third party.
+Hey there, random stranger on the internet!
 
-Example:
+Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tool—server and even client (coming soon).
 
-![Proxy](https://i.ibb.co/SmFnVXD/Untitled-2024-11-16-1108.png)
+## Why do I need to use censorship circumvention tools like VLESS when VPNs exist?
 
-Most of these countries and organizations do not just block VPNs and proxy services they block only the most popular ones so in order to gain a more secure and reliable access it is also advisable that you have your own proxy or VPN server set up.
+Really good question. Here’s why:
 
-Free subdomains can be used for these proxies, found here [DigitalPlat](https://dash.domain.digitalplat.org)
+Most VPN providers do not operate in censored countries like China. And if they do work in China, they mostly have collaboration with the Chinese government to monitor what you're doing. Even if the VPN provider is outside of China, they often don't provide a way to connect securely without getting blocked.
 
-> Warning: Please note that any damage that may be incurred while practicing censorship regulations is not the responsibility of this organization. This tutorial is for informational purposes only.
+Remember Shadowsocks? It is still supported by Mullvad, but the problem is that the GFW (Great Firewall) in China is really good at detecting Shadowsocks traffic and blocking it.
+
+That's why we recommend you use your own server at home or on a cloud provider to deploy your own censorship circumvention tool—keeping all your data to yourself.
+
+All software used in this guide is open source, except for part of Kasm Workspace.
+
+AI is used throughout the guide only to help with spelling and grammar. Me and Wispy wrote all of this from scratch. Why did we use AI? I am Chinese and not very good at English.
+
+Free subdomains can be used for these proxies, found here: [DigitalPlat](https://dash.domain.digitalplat.org).
+
+> **Warning:** We are not responsible for any damages that may occur while attempting censorship circumvention. This guide exists as an educational resource for people to learn about censorship.
