@@ -73,8 +73,7 @@ This will be shown to you after launching X-UI with `sudo x-ui`
    Disable Insecure Encryption: Disabled (default)
    Transmission: ws
    Accept Proxy Protocol: Disabled (default)
-   TLS: Enable
-   SNI: Your domain name
+   TLS: Disable
    Sniffing: Enabled (default)
 ```
 4. Click **"Add To"** to save.
@@ -91,7 +90,7 @@ This will be shown to you after launching X-UI with `sudo x-ui`
 1. Activate your domain in Cloudflare if you don't already have it.
 2. Set an **A Record** pointing to your VPS public IP.  Make sure to turn on proxy.
 3. Go to **SSL/TLS** on Cloudflare:
-Make sure it is on **Full**, not **Full Strict**.
+Make sure it is on **Flexible**, not **Full Strict**.
 
 ---
 ## You're Done!

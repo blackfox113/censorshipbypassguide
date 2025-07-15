@@ -18,6 +18,7 @@ nav:
   - Home: "index.md" # Homepage
   - Server Side:
       - VLESS: "Server/VLESS.md"
+      - VMESS: "Server/VMESS.md"
       - Hysteria 2: "Server/Hysteria.md"
       - NaïveProxy: "Server/Naïve.md"
       - Trojan: "Server/Trojan.md"
@@ -26,12 +27,13 @@ nav:
       - VPN: "Server/VPN.md"
   - Client Side:
       - Clients: "Client Side/Clients.md"
-  - Misc:
+  - Useful Links:
       - Website Source Code: "https://github.com/eli32-vlc/censorshipbypassguide"
       - Gateway: "https://censordex.fr.to"
       - Free VLESS: "https://theglitchreport.qzz.io/posts/free-proxy-setup-using-render-and-vless/"
       - Support: "https://forum.7844380499.cfd"
+  - Misc:
       - Safety Note: "Misc/safety.md"
-      - Privacy: "Misc/privacy.md"
+      - Website Privacy: "Misc/privacy.md"
       - Contacts: "Misc/contacts.md"
       - Licence: "Misc/licence.md"
