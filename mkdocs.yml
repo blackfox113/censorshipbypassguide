@@ -27,6 +27,7 @@ nav:
       - VPN: "Server/VPN.md"
   - Client Side:
       - Clients: "Client Side/Clients.md"
+      - Networking: "Client Side/Networking.md"
   - Useful Links:
       - Website Source Code: "https://github.com/eli32-vlc/censorshipbypassguide"
       - Gateway: "https://censordex.fr.to"
