@@ -16,6 +16,24 @@ Remember Shadowsocks? It is still supported by Mullvad, but the problem is that 
 
 That's why we recommend you use your own server at home or on a cloud provider to deploy your own censorship circumvention tool—keeping all your data to yourself.
 
+Setup recommended:
+
+
+| Environment              | Recommended Setup          |
+|--------------------------|----------------------------|
+| School (Custom Firewall) | VLESS + CDN + WS + TLS     |
+| School (Prebuilt Solution) | VLESS + CDN + WS + TLS   |
+| Work (Custom Firewall)   | VLESS + CDN + WS + TLS     |
+| Work (Prebuilt Solution) | NaïveProxy                 |
+| Work/School (TLS MITM)   | VMESS + AES + CDN + WS + TLS |
+| Iran                     | NaïveProxy                 |
+| China                    | NaïveProxy                 |
+| Russia                   | GoodbyeDPI                 |
+
+**Note:**
+- **"Solution"** means the school or workplace is using pre-existing firewall software or a commercial solution (e.g., Palo Alto, Fortinet).
+- **"Custom"** means they developed their own firewall or heavily modified open-source software.
+
 All software used in this guide is open source, except for part of Kasm Workspace.
 
 AI is used throughout the guide only to help with spelling and grammar. Me and Wispy wrote all of this from scratch. Why did we use AI? I am Chinese and not very good at English.
