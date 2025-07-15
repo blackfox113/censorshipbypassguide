@@ -32,7 +32,9 @@ That's why we recommend you use your own server at home or on a cloud provider t
 
 **Note:**
 - **"Solution"** means the school or workplace is using pre-existing firewall software or a commercial solution (e.g., Palo Alto, Fortinet).
+
 - **"Custom"** means they developed their own firewall or heavily modified open-source software.
+
 - Some school, work, or public Wi-Fi networks block UDP or QUIC, so Hysteria 2 can't be used.
 
 
