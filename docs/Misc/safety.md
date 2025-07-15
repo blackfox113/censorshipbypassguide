@@ -20,4 +20,13 @@ Using a VPN or proxy always carries risks. Depending on your location, it could 
 
 1. **Avoid online banking:** Be cautious when accessing sensitive financial information over a VPN or proxy.
 2. **Understand traffic visibility:** VPN or proxy servers can see some of your data, so only use trusted services.
-2.
+
+---
+
+### SSL MITM Attack
+
+Some schools require students to install a custom CA certificate, which lets them intercept and decrypt SSL/TLS traffic. This breaks protocols like VLESS, meaning they can see what websites you're visiting.
+
+In this case, consider switching to VMESS. It adds an extra layer of AES encryption on top of TLS/SSL, which helps protect your traffic from being inspected.
+
+You can read more about this here: [Link](https://theglitchreport.qzz.io/posts/moving-on-from-vless-to-vmess/)
