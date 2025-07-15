@@ -1,19 +1,10 @@
-# V2Ray
+# VLESS
 
-### I’ve opened a thread where we’re discussing setups, country-specific blocks, and tips for better performance.
+What is VLESS? VLESS is a proxy protocol—remember, it's not a VPN. VLESS is an ultra-fast, minimalistic protocol that strips out the unnecessary parts of VMESS. It is being developed by Xray, a fork of V2Ray.
 
-[Join the V2Ray discussion](https://forum.7844380499.cfd/posts/general-v2ray-discussion/#Default){ .btn .btn-default }
+You can configure VLESS to use no encryption or to use TLS for encryption. Because it relies on TLS, it is very lightweight. VLESS supports multiple ways of transporting data under different censorship scenarios, such as WebSockets (WS), TCP, QUIC, KCP, HTTP, HTTP upgrade, and gRPC.
 
-## What is V2Ray?
-
-V2Ray is a very powerful and privacy-enhancing proxy tool. It supports multiple protocols, can bypass the censorship of many countries, and traffic is fully encrypted, securing your internet use without restrictions.
-
-> **Note**: V2Ray itself is only a protocol framework but is not a provider of servers. You may want to either set up your server or subscribe to one, often referred to as "机场" in Chinese .
-### Common Protocols:
-- **VLESS**: Lightweight and generally better for servers.
-- **VMESS**: can be configured with advanced features to bypass highly strict censorship.
-
-The most popular config is: `VLESS + CDN + WS + TLS`.
+We recommend TLS over VLESS because it adds encryption, and a CDN provides a way to hide the proxy—almost making it unblockable.
 
 ---
 ### Terms Explanation
@@ -74,7 +65,7 @@ This will be shown to you after launching X-UI with `sudo x-ui`
 3. Settings as below:
 ```
    Remark: Name your server
-   Protocol: vless / vmess (encrypted)
+   Protocol: vless
    Listening IP: blank (default)
    Port: 443
    Total Traffic (GB): blank (default)
