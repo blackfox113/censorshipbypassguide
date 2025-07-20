@@ -2,7 +2,7 @@
 
 ![Banner](https://files.catbox.moe/1mcjvr.png)
 
-Welcome to **Censordex**, a personal hub for navigating internet censorship.
+Welcome to the **Censorship Bypass Guide**, a personal hub for navigating internet censorship.
 
 This site includes **detailed, easy-to-follow guides** to help you set up your own censorship bypass tools—both on servers and client devices. Whether you're just starting out or have some experience, you'll likely find something useful here. If the main site isn't accessible, you can also read the guides directly on GitHub in markdown format.
 
