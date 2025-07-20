@@ -44,6 +44,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+plugins:
+  - social:
+      cards_layout: default
+
 nav:
   - Home: "index.md" # Homepage
   - Server Side:
