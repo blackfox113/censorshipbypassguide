@@ -1,5 +1,7 @@
 # VLESS
 
+[Join V2Ray Discussion](https://forum.7844380499.cfd/posts/general-v2ray-discussion/){ .md-button }
+
 What is VLESS? VLESS is a proxy protocol—remember, it's not a VPN. VLESS is an ultra-fast, minimalistic protocol that strips out the unnecessary parts of VMESS. It is being developed by Xray, a fork of V2Ray.
 
 You can configure VLESS to use no encryption or to use TLS for encryption. Because it relies on TLS, it is very lightweight. VLESS supports multiple ways of transporting data under different censorship scenarios, such as WebSockets (WS), TCP, QUIC, KCP, HTTP, HTTP upgrade, and gRPC.

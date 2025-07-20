@@ -1,5 +1,7 @@
 # Introduction
 
+> We switched to mkdocs material because it has support for i18n.
+
 ![Banner](https://files.catbox.moe/1mcjvr.png)
 
 Hey there, random stranger on the internet!
