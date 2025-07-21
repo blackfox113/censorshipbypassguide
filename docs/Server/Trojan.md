@@ -24,4 +24,4 @@ Trojan is a powerful proxy tool designed to ensure secure, censorship-resistant 
 
 ---
 
-## Trojan is dead. No new updates are being pushed so we advice you to use the v2ray method.
+## Trojan is dead. No new updates are being pushed so we advise you to use the v2ray method.
