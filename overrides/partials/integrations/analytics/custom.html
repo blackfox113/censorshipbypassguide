@@ -1,0 +1,19 @@
+<script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="a585a5e7-c3a8-4776-b34c-41cd8b1928b2"
+></script>
+
+<script>
+    /* Add custom analytics integration here, e.g. */
+    var property = "{{ config.extra.analytics.property }}";
+
+    /* Wait for page to load and application to mount */
+    document.addEventListener("DOMContentLoaded", function () {
+        location$.subscribe(function (url) {
+            /* Add custom page event tracking here */
+            // Example: send page view event to Umami (if needed)
+            // umami.trackView(url);
+        });
+    });
+</script>

@@ -1,5 +1,10 @@
 site_name: Censorship Bypass Guide
+site_url: https://2305878273.7844380499.cfd # CHANGE THIS TO YOUR ACTUAL SITE ADDRESS
+
 theme:
+  name: material
+  custom_dir: overrides
+  favicon: images/favicon.svg
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -23,19 +28,19 @@ theme:
 
   icon:
     logo: material/wall-fire
-  name: material
   features:
     - navigation.footer
+    - navigation.side.indexes
 
 extra_css:
   - css/custom.css
 
-features:
-  - navigation.side.indexes
-
 copyright: Copyright &copy; 2025 Zenith Rifle and Wispy
 
 extra:
+  analytics:
+    provider: custom
+    property: foobar
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/eli32-vlc/censorshipbypassguide
