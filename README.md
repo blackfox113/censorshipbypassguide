@@ -13,6 +13,8 @@ If you have questions, want to discuss ideas, or share your own methods, you're 
 **A note from the creator:**
 I'm Chinese, and English isn't my first language, so I used AI to help with spelling and grammar. Hopefully, that makes things clearer.
 
+The first Russian translation of this guide is also available.
+
 This is a community project, and suggestions or pull requests are always appreciated.
 
 **Main Site:** [https://2305878273.7844380499.cfd](https://2305878273.7844380499.cfd)
