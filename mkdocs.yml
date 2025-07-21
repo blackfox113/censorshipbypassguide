@@ -3,6 +3,7 @@ site_url: https://2305878273.7844380499.cfd # CHANGE THIS TO YOUR ACTUAL SITE AD
 
 theme:
   name: material
+  language: en
   custom_dir: overrides
   favicon: images/favicon.svg
   palette:
@@ -50,6 +51,32 @@ markdown_extensions:
   - md_in_html
 
 plugins:
+  - i18n:
+      default_language: en
+      languages:
+        - locale: en
+          name: English
+          # ADD THESE TWO LINES:
+          default: true
+          build: true
+          nav_translations:
+            Home: "Home"
+            Server Side: "Server Side"
+            Client Side: "Client Side"
+            Environments: "Environments"
+            Useful Links: "Useful Links"
+            Misc: "Misc"
+        - locale: ru
+          name: Русский
+          # You should also add 'build: true' for Russian if you want it to be built
+          build: true # ADD THIS LINE if you want the Russian version to be built
+          nav_translations:
+            Home: "Главная"
+            Server Side: "Сторона сервера"
+            Client Side: "Сторона клиента"
+            Environments: "Среды"
+            Useful Links: "Полезные ссылки"
+            Misc: "Разное"
   - social:
       cards_layout: default
 
@@ -67,6 +94,8 @@ nav:
   - Client Side:
       - Clients: "Client Side/Clients.md"
       - Networking: "Client Side/Networking.md"
+  - Environments:
+      - Fortinet: "Environments/Fortinet.md"
   - Useful Links:
       - Website Source Code: "https://github.com/eli32-vlc/censorshipbypassguide"
       - Gateway: "https://censordex.fr.to"
