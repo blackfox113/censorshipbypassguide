@@ -56,27 +56,63 @@ plugins:
       languages:
         - locale: en
           name: English
-          # ADD THESE TWO LINES:
-          default: true
-          build: true
+          default: true # Mark English as the default language
+          build: true # Ensure English version is built
           nav_translations:
             Home: "Home"
             Server Side: "Server Side"
+            VLESS: "VLESS"
+            VMESS: "VMESS"
+            Hysteria 2: "Hysteria 2"
+            NaïveProxy: "NaïveProxy"
+            Trojan: "Trojan"
+            Kasm Workspaces: "Kasm Workspaces"
+            Doge Unblocker: "Doge Unblocker"
+            VPN: "VPN"
             Client Side: "Client Side"
+            Clients: "Clients"
+            Networking: "Networking"
             Environments: "Environments"
+            Fortinet: "Fortinet"
             Useful Links: "Useful Links"
+            Website Source Code: "Website Source Code"
+            Gateway: "Gateway"
+            Free VLESS: "Free VLESS"
+            Support: "Support"
             Misc: "Misc"
+            Safety Note: "Safety Note"
+            Website Privacy: "Website Privacy"
+            Contacts: "Contacts"
+            Licence: "Licence"
         - locale: ru
           name: Русский
-          # You should also add 'build: true' for Russian if you want it to be built
-          build: true # ADD THIS LINE if you want the Russian version to be built
+          build: true # Ensure Russian version is built
           nav_translations:
             Home: "Главная"
             Server Side: "Сторона сервера"
+            VLESS: "VLESS" # Keep as VLESS if it's a proper noun/not translated
+            VMESS: "VMESS" # Keep as VMESS if it's a proper noun/not translated
+            Hysteria 2: "Hysteria 2" # Keep as Hysteria 2 if it's a proper noun/not translated
+            NaïveProxy: "NaïveProxy" # Keep as NaïveProxy if it's a proper noun/not translated
+            Trojan: "Trojan" # Keep as Trojan if it's a proper noun/not translated
+            Kasm Workspaces: "Kasm Workspaces" # Keep as Kasm Workspaces if it's a proper noun/not translated
+            Doge Unblocker: "Doge Unblocker" # Keep as Doge Unblocker if it's a proper noun/not translated
+            VPN: "VPN" # Keep as VPN if it's a proper noun/not translated
             Client Side: "Сторона клиента"
+            Clients: "Клиенты"
+            Networking: "Сеть"
             Environments: "Среды"
+            Fortinet: "Fortinet" # Keep as Fortinet if it's a proper noun/not translated
             Useful Links: "Полезные ссылки"
+            Website Source Code: "Исходный код сайта"
+            Gateway: "Шлюз"
+            Free VLESS: "Бесплатный VLESS"
+            Support: "Поддержка"
             Misc: "Разное"
+            Safety Note: "Примечание по безопасности"
+            Website Privacy: "Конфиденциальность сайта"
+            Contacts: "Контакты"
+            Licence: "Лицензия"
   - social:
       cards_layout: default
 
