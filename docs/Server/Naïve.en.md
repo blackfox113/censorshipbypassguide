@@ -1,17 +1,17 @@
-# NaïveProxy Setup Guide
+# NaïveProxy
 
 ---
 
 ## What is NaïveProxy?
 
-**NaïveProxy** is a lightweight, high-performance proxy tool designed to bypass internet censorship. It supports both HTTP/2 and HTTP/3, and disguises itself as regular web traffic. Built on Chromium with integrated TLS encryption, it's secure, fast, and efficient—perfect for avoiding restrictions without drawing attention.
+**NaïveProxy** is a lightweight, high-performance proxy tool designed to bypass internet censorship. It supports both HTTP/2 and HTTP/3 and disguises itself as regular web traffic. Built on Chromium with integrated TLS encryption, it's secure, fast, and efficient—perfect for avoiding restrictions without drawing attention.
 
 ---
 
 ## Why Choose NaïveProxy?
 
-- **Looks Like Normal Traffic**: Uses Chromium’s TLS stack, so it blends in like any other browser session.
-- **Simple to Use**: Easy to set up even if you're not super technical.
+* **Looks Like Normal Traffic**: Uses Chromium’s TLS stack, so it blends in like any other browser session.
+* **Simple to Use**: Easy to set up even if you're not super technical.
 
 ---
 
@@ -19,27 +19,31 @@
 
 ### What You’ll Need
 
-- A **domain name**, preferably managed through Cloudflare or a similar DNS provider.
-- A **Linux VPS** with ports **443** and **80** open.
-- **Basic requirements**:
-  - Some familiarity with the command line
-  - Root access to your server
+* A **domain name**, preferably managed through Cloudflare or a similar DNS provider.
+* A **Linux VPS** with ports **443** and **80** open.
+* **Basic requirements**:
+
+  * Some familiarity with the command line
+  * Root access to your server
 
 ---
 
 ## Step-by-Step Setup
 
 ### 1. Switch to the Root User
+
 ```bash
 sudo -s
 ```
 
 ### 2. Update Your System
+
 ```bash
 apt update
 ```
 
 ### 3. Install Go
+
 ```bash
 apt-get install software-properties-common
 add-apt-repository ppa:longsleep/golang-backports
@@ -48,11 +52,13 @@ apt-get install golang-go
 ```
 
 ### 4. Install `xcaddy`
+
 ```bash
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 ```
 
 ### 5. Build Caddy with the NaïveProxy Plugin
+
 ```bash
 ~/go/bin/xcaddy build \
   --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwardproxy@naive
@@ -92,28 +98,32 @@ route {
 ## Caddy Commands
 
 ### Run in the foreground
+
 ```bash
 ./caddy run
 ```
 
 ### Run in the background
+
 ```bash
 ./caddy start
 ```
 
 ### Stop server
+
 ```bash
 ./caddy stop
 ```
 
 ### Reload the configuration
+
 ```bash
 ./caddy reload
 ```
 
 ---
 
-## Getting it Running
+## Getting It Running
 
 ### 7. Generate SSL Certificates
 
@@ -130,6 +140,52 @@ Once you see it’s running, press `Ctrl + C` to stop it.
 ```bash
 ./caddy start
 ```
+
+---
+
+### 9. Automatic Start on Reboot
+
+```bash
+nano /etc/systemd/system/caddy-custom.service
+```
+
+And paste this in:
+
+```
+[Unit]
+Description=Custom Caddy Service via Bash
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/YOUR_USERNAME_WHERE_YOU_PUT_THE_CADDYFILE
+ExecStart=/bin/bash -c './caddy run'
+Restart=on-failure
+User=wispy
+Group=wispy
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Make sure to change the required values. Maybe your Caddy binary is in a different location, so `ExecStart` must point to that specific location.
+Now press `Ctrl + X`, then `Y`, then `Enter` to save.
+
+Reload it:
+
+```bash
+sudo systemctl daemon-reload
+```
+
+Now run:
+
+```bash
+sudo systemctl enable caddy-custom
+sudo systemctl start caddy-custom
+sudo systemctl status caddy-custom
+```
+
+If you see "active" and "running," it's good.
 
 ---
 

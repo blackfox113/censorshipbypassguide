@@ -29,7 +29,7 @@ That's why we recommend you use your own server at home or on a cloud provider t
 | Work/School (TLS MITM)                       | VMESS + AES + CDN + WS + TLS       |
 | Iran                                          | NaïveProxy                         |
 | China                                         | NaïveProxy                         |
-| Russia                                        | GoodbyeDPI                         |
+| Russia                                        | VLESS or Naive                    |
 | Gaming in school/work/public Wi-Fi or China  | Hysteria 2                         |
 
 **Note:**

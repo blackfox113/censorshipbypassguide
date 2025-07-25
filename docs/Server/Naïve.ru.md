@@ -23,7 +23,7 @@
 * **Linux VPS** с открытыми портами **443** и **80**.
 * **Базовые требования**:
 
-  * Знание командной строки на базовом уровне
+  * Базовые знания командной строки
   * Root-доступ к серверу
 
 ---
@@ -143,8 +143,56 @@ route {
 
 ---
 
+### 9. Автоматический запуск при перезагрузке
+
+Откройте файл службы:
+
+```bash
+nano /etc/systemd/system/caddy-custom.service
+```
+
+И вставьте в него:
+
+```
+[Unit]
+Description=Custom Caddy Service via Bash
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ВАШ_ПОЛЬЗОВАТЕЛЬ_ГДЕ_CADDYFILE
+ExecStart=/bin/bash -c './caddy run'
+Restart=on-failure
+User=wispy
+Group=wispy
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Обязательно замените необходимые значения. Возможно, путь до вашего Caddy отличается — укажите его в `ExecStart`.
+Нажмите `Ctrl + X`, затем `Y`, затем `Enter`, чтобы сохранить файл.
+
+Перезагрузите systemd:
+
+```bash
+sudo systemctl daemon-reload
+```
+
+Теперь активируйте и запустите службу:
+
+```bash
+sudo systemctl enable caddy-custom
+sudo systemctl start caddy-custom
+sudo systemctl status caddy-custom
+```
+
+Если статус "active" и "running" — всё работает правильно.
+
+---
+
 ## Готово!
 
-Ваш NaïveProxy сервер работает.
+Ваш сервер NaïveProxy теперь работает.
 
-Настройте клиент, указав домен, имя пользователя и пароль, которые вы задали, используя порт 443. Не забудьте в поле SNI (Server Name Indication) указать доменное имя. Все остальные настройки можно оставить по умолчанию.
+Настройте клиент, указав домен, имя пользователя и пароль, которые вы задали, используя порт 443. Не забудьте указать доменное имя в поле SNI (Server Name Indication). Все остальные настройки можно оставить по умолчанию.
