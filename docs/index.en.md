@@ -44,7 +44,3 @@ All software used in this guide is open source, except for part of Kasm Workspac
 AI is used throughout the guide only to help with spelling and grammar. Me and Wispy wrote all of this from scratch. Why did we use AI? I am Chinese and not very good at English.
 
 Free subdomains can be used for these proxies, found here: [DigitalPlat](https://dash.domain.digitalplat.org). (We don't get paid we just like the service and I use it my self.)
-
-### Official Art
-
-![Art 1](https://files.catbox.moe/npo0a0.png)

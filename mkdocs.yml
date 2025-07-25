@@ -81,6 +81,7 @@ plugins:
             Support: "Support"
             Misc: "Misc"
             Safety Note: "Safety Note"
+            Official Art: "Official Art"
             Website Privacy: "Website Privacy"
             Contacts: "Contacts"
             Licence: "Licence"
@@ -109,6 +110,7 @@ plugins:
             Free VLESS: "Бесплатный VLESS"
             Support: "Поддержка"
             Misc: "Разное"
+            Official Art: "Официальное искусство"
             Safety Note: "Примечание по безопасности"
             Website Privacy: "Конфиденциальность сайта"
             Contacts: "Контакты"
@@ -138,6 +140,7 @@ nav:
       - Free VLESS: "https://theglitchreport.qzz.io/posts/free-proxy-setup-using-render-and-vless/"
       - Support: "https://forum.7844380499.cfd"
   - Misc:
+      - Official Art: "Misc/art.md"
       - Safety Note: "Misc/safety.md"
       - Website Privacy: "Misc/privacy.md"
       - Contacts: "Misc/contacts.md"
