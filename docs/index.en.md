@@ -2,7 +2,7 @@
 
 ![Banner](https://files.catbox.moe/1mcjvr.png)
 
-Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tool—server and even client.
+Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tools for server and client.
 
 ## Why do I need to use censorship circumvention tools like VLESS when VPNs exist?
 
