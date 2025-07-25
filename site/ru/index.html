@@ -288,6 +288,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -299,6 +312,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ПРЕДУПРЕЖДЕНИЕ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vless-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Почему нужно использовать инструменты обхода цензуры вроде VLESS, если существуют VPN?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Почему нужно использовать инструменты обхода цензуры вроде VLESS, если существуют VPN?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Рекомендуемая настройка:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -583,7 +648,7 @@
   
   
   <span class="md-ellipsis">
-    Clients
+    Клиенты
     
   </span>
   
@@ -606,7 +671,7 @@
   
   
   <span class="md-ellipsis">
-    Networking
+    Сеть
     
   </span>
   
@@ -742,7 +807,7 @@
   
   
   <span class="md-ellipsis">
-    Website Source Code
+    Исходный код сайта
     
   </span>
   
@@ -765,7 +830,7 @@
   
   
   <span class="md-ellipsis">
-    Gateway
+    Шлюз
     
   </span>
   
@@ -788,7 +853,7 @@
   
   
   <span class="md-ellipsis">
-    Free VLESS
+    Бесплатный VLESS
     
   </span>
   
@@ -811,7 +876,7 @@
   
   
   <span class="md-ellipsis">
-    Support
+    Поддержка
     
   </span>
   
@@ -879,7 +944,7 @@
   
   
   <span class="md-ellipsis">
-    Safety Note
+    Примечание по безопасности
     
   </span>
   
@@ -902,7 +967,7 @@
   
   
   <span class="md-ellipsis">
-    Website Privacy
+    Конфиденциальность сайта
     
   </span>
   
@@ -925,7 +990,7 @@
   
   
   <span class="md-ellipsis">
-    Contacts
+    Контакты
     
   </span>
   
@@ -948,7 +1013,7 @@
   
   
   <span class="md-ellipsis">
-    Licence
+    Лицензия
     
   </span>
   
@@ -986,6 +1051,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ПРЕДУПРЕЖДЕНИЕ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vless-vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Почему нужно использовать инструменты обхода цензуры вроде VLESS, если существуют VPN?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Почему нужно использовать инструменты обхода цензуры вроде VLESS, если существуют VPN?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Рекомендуемая настройка:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1000,7 +1106,81 @@
 
 
 
-<h1 id="_1">Добро пожаловать в русское руководство!</h1>
+<h1 id="_1">Введение</h1>
+<p><img alt="Баннер" src="https://files.catbox.moe/1mcjvr.png" /></p>
+<p>Добро пожаловать в Гайд по обходу цензуры. Это подробная документация, которая научит вас, как настроить свои собственные инструменты обхода цензуры как на сервере, так и на клиенте.</p>
+<h2 id="_2">ПРЕДУПРЕЖДЕНИЕ</h2>
+<p><strong>Мы не несем ответственности за любые проблемы, вызванные использованием обхода цензуры.</strong> Изучайте вопрос и соблюдайте осторожность.</p>
+<h2 id="vless-vpn">Почему нужно использовать инструменты обхода цензуры вроде VLESS, если существуют VPN?</h2>
+<p>Большинство VPN-провайдеров не работают в странах с жесткой цензурой, например в Китае. А если и работают, то чаще всего сотрудничают с правительством и следят за вашей активностью. Даже если VPN находится за пределами Китая, часто он не может установить безопасное соединение без блокировок.</p>
+<p>Помните Shadowsocks? Его до сих пор поддерживает Mullvad, но проблема в том, что Великий Китайский Фаервол (GFW) хорошо научился определять трафик Shadowsocks и блокировать его.</p>
+<p>Вот почему мы рекомендуем использовать собственный сервер дома или в облаке, чтобы развернуть свой обход цензуры — так все данные остаются у вас.</p>
+<h3 id="_3">Рекомендуемая настройка:</h3>
+<table>
+<thead>
+<tr>
+<th>Среда</th>
+<th>Настройка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Школа (собственный фаервол)</td>
+<td>VLESS + CDN + WS + TLS</td>
+</tr>
+<tr>
+<td>Школа (готовое решение)</td>
+<td>VLESS + CDN + WS + TLS</td>
+</tr>
+<tr>
+<td>Работа (собственный фаервол)</td>
+<td>VLESS + CDN + WS + TLS</td>
+</tr>
+<tr>
+<td>Работа (готовое решение)</td>
+<td>NaïveProxy</td>
+</tr>
+<tr>
+<td>Школа/Работа (TLS MITM)</td>
+<td>VMESS + AES + CDN + WS + TLS</td>
+</tr>
+<tr>
+<td>Иран</td>
+<td>NaïveProxy</td>
+</tr>
+<tr>
+<td>Китай</td>
+<td>NaïveProxy</td>
+</tr>
+<tr>
+<td>Россия</td>
+<td>VLESS или Naïve</td>
+</tr>
+<tr>
+<td>Турция</td>
+<td>Zapret или GoodbyeDPI</td>
+</tr>
+<tr>
+<td>Игры в школе/на работе/в Wi-Fi/в Китае</td>
+<td>Hysteria 2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Примечания:</strong></p>
+<ul>
+<li>
+<p><strong>"Готовое решение"</strong> означает, что школа или работа использует существующее коммерческое ПО или фаервол, например Palo Alto или Fortinet.</p>
+</li>
+<li>
+<p><strong>"Собственный фаервол"</strong> — это когда фаервол написан самостоятельно или сильно модифицирован на базе открытого кода.</p>
+</li>
+<li>
+<p>Некоторые школьные, рабочие и публичные сети блокируют UDP или QUIC, поэтому Hysteria 2 может не работать.</p>
+</li>
+</ul>
+<p>Весь софт в этом гайде — с открытым исходным кодом, кроме некоторых компонентов Kasm Workspace.</p>
+<p>Искусственный интеллект использовался только для помощи с орфографией и грамматикой. Всё написано мной и Wispy с нуля. Почему ИИ? Я китаец, и мой английский не очень.</p>
+<p>Бесплатные поддомены для прокси можно взять здесь: <a href="https://dash.domain.digitalplat.org">DigitalPlat</a>. (Мы не получаем деньги, просто нам нравится этот сервис, и я сам им пользуюсь.)</p>
 
 
 

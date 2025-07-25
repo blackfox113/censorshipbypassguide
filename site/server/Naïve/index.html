@@ -127,7 +127,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#naiveproxy-setup-guide" class="md-skip">
+        <a href="#naiveproxy" class="md-skip">
           Skip to content
         </a>
       
@@ -641,11 +641,11 @@
         <li class="md-nav__item">
   <a href="#getting-it-running" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting it Running
+      Getting It Running
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Getting it Running">
+    <nav class="md-nav" aria-label="Getting It Running">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -661,6 +661,15 @@
   <a href="#8-start-caddy-in-the-background" class="md-nav__link">
     <span class="md-ellipsis">
       8. Start Caddy in the Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-automatic-start-on-reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Automatic Start on Reboot
     </span>
   </a>
   
@@ -1427,11 +1436,11 @@
         <li class="md-nav__item">
   <a href="#getting-it-running" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting it Running
+      Getting It Running
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Getting it Running">
+    <nav class="md-nav" aria-label="Getting It Running">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1447,6 +1456,15 @@
   <a href="#8-start-caddy-in-the-background" class="md-nav__link">
     <span class="md-ellipsis">
       8. Start Caddy in the Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-automatic-start-on-reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Automatic Start on Reboot
     </span>
   </a>
   
@@ -1482,10 +1500,10 @@
 
 
 
-<h1 id="naiveproxy-setup-guide">NaïveProxy Setup Guide</h1>
+<h1 id="naiveproxy">NaïveProxy</h1>
 <hr />
 <h2 id="what-is-naiveproxy">What is NaïveProxy?</h2>
-<p><strong>NaïveProxy</strong> is a lightweight, high-performance proxy tool designed to bypass internet censorship. It supports both HTTP/2 and HTTP/3, and disguises itself as regular web traffic. Built on Chromium with integrated TLS encryption, it's secure, fast, and efficient—perfect for avoiding restrictions without drawing attention.</p>
+<p><strong>NaïveProxy</strong> is a lightweight, high-performance proxy tool designed to bypass internet censorship. It supports both HTTP/2 and HTTP/3 and disguises itself as regular web traffic. Built on Chromium with integrated TLS encryption, it's secure, fast, and efficient—perfect for avoiding restrictions without drawing attention.</p>
 <hr />
 <h2 id="why-choose-naiveproxy">Why Choose NaïveProxy?</h2>
 <ul>
@@ -1498,8 +1516,12 @@
 <ul>
 <li>A <strong>domain name</strong>, preferably managed through Cloudflare or a similar DNS provider.</li>
 <li>A <strong>Linux VPS</strong> with ports <strong>443</strong> and <strong>80</strong> open.</li>
-<li><strong>Basic requirements</strong>:</li>
-<li>Some familiarity with the command line</li>
+<li>
+<p><strong>Basic requirements</strong>:</p>
+</li>
+<li>
+<p>Some familiarity with the command line</p>
+</li>
 <li>Root access to your server</li>
 </ul>
 <hr />
@@ -1562,7 +1584,7 @@ route {
 <pre><code class="language-bash">./caddy reload
 </code></pre>
 <hr />
-<h2 id="getting-it-running">Getting it Running</h2>
+<h2 id="getting-it-running">Getting It Running</h2>
 <h3 id="7-generate-ssl-certificates">7. Generate SSL Certificates</h3>
 <p>Start Caddy once to generate SSL certificates:</p>
 <pre><code class="language-bash">./caddy run
@@ -1571,6 +1593,37 @@ route {
 <h3 id="8-start-caddy-in-the-background">8. Start Caddy in the Background</h3>
 <pre><code class="language-bash">./caddy start
 </code></pre>
+<hr />
+<h3 id="9-automatic-start-on-reboot">9. Automatic Start on Reboot</h3>
+<pre><code class="language-bash">nano /etc/systemd/system/caddy-custom.service
+</code></pre>
+<p>And paste this in:</p>
+<pre><code>[Unit]
+Description=Custom Caddy Service via Bash
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/YOUR_USERNAME_WHERE_YOU_PUT_THE_CADDYFILE
+ExecStart=/bin/bash -c './caddy run'
+Restart=on-failure
+User=wispy
+Group=wispy
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Make sure to change the required values. Maybe your Caddy binary is in a different location, so <code>ExecStart</code> must point to that specific location.
+Now press <code>Ctrl + X</code>, then <code>Y</code>, then <code>Enter</code> to save.</p>
+<p>Reload it:</p>
+<pre><code class="language-bash">sudo systemctl daemon-reload
+</code></pre>
+<p>Now run:</p>
+<pre><code class="language-bash">sudo systemctl enable caddy-custom
+sudo systemctl start caddy-custom
+sudo systemctl status caddy-custom
+</code></pre>
+<p>If you see "active" and "running," it's good.</p>
 <hr />
 <h2 id="youre-done">You're Done!</h2>
 <p>Your NaïveProxy server is now up and running.</p>

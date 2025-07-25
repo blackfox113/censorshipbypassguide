@@ -27,6 +27,8 @@ That's why we recommend you use your own server at home or on a cloud provider t
 | Iran                                          | NaïveProxy                         |
 | China                                         | NaïveProxy                         |
 | Russia                                        | VLESS or Naive                    |
+| Turkey                                       | Zapret or GoodbyeDPI               |
+| Fortinet                                     | [VLESS Reality](Environments/Fortinet.en.md)
 | Gaming in school/work/public Wi-Fi or China  | Hysteria 2                         |
 
 **Note:**
