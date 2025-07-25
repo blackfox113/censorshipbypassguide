@@ -1,16 +1,13 @@
 # Introduction
 
-> We switched to mkdocs material because it has support for i18n.
-
 ![Banner](https://files.catbox.moe/1mcjvr.png)
 
-Hey there, random stranger on the internet!
+Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tools for server and client.
 
-Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tool—server and even client (coming soon).
+## WARNING
+**We are not responsible for any issues caused from censorship circumvention.** Research and stay safe.
 
 ## Why do I need to use censorship circumvention tools like VLESS when VPNs exist?
-
-Really good question. Here’s why:
 
 Most VPN providers do not operate in censored countries like China. And if they do work in China, they mostly have collaboration with the Chinese government to monitor what you're doing. Even if the VPN provider is outside of China, they often don't provide a way to connect securely without getting blocked.
 
@@ -44,8 +41,4 @@ All software used in this guide is open source, except for part of Kasm Workspac
 
 AI is used throughout the guide only to help with spelling and grammar. Me and Wispy wrote all of this from scratch. Why did we use AI? I am Chinese and not very good at English.
 
-Free subdomains can be used for these proxies, found here: [DigitalPlat](https://dash.domain.digitalplat.org).
-
-(We don't get paid we just like the service and I use it my self.)
-
-> **Warning:** We are not responsible for any damages that may occur while attempting censorship circumvention. This guide exists as an educational resource for people to learn about censorship.
+Free subdomains can be used for these proxies, found here: [DigitalPlat](https://dash.domain.digitalplat.org). (We don't get paid we just like the service and I use it my self.)
