@@ -1,5 +1,5 @@
 # Contacts
 
-Use the [forum](https://https://forum.7844380499.cfd) or use the Github.
+Use Github or the BBS forum.
 
 Proudly Supported By: [FMHY](https://fmhy.net)

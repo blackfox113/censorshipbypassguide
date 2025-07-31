@@ -1,7 +1,6 @@
 
 # VLESS
 
-[Присоединиться к обсуждению V2Ray](https://forum.7844380499.cfd/posts/general-v2ray-discussion/){ .md-button }
 
 Что такое VLESS?
 VLESS — это прокси-протокол, помните, это не VPN. VLESS — ультрабыстрый, минималистичный протокол, который убирает ненужные части из VMESS. Его разрабатывает Xray, форк V2Ray.
@@ -101,18 +100,18 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 3. Настройте параметры так:
 
 ```
-Remark: Имя вашего сервера  
-Protocol: vless  
-Listening IP: оставить пустым (по умолчанию)  
-Port: 443  
-Total Traffic (GB): оставить пустым (по умолчанию)  
-Expiry Date: оставить пустым (по умолчанию)  
-Disable Insecure Encryption: Отключено (по умолчанию)  
-Transmission: ws  
-Accept Proxy Protocol: Отключено (по умолчанию)  
-TLS: Включено  
-Domain Name: Ваш домен  
-Загрузите Certificate.crt и Private.key  
+Remark: Имя вашего сервера
+Protocol: vless
+Listening IP: оставить пустым (по умолчанию)
+Port: 443
+Total Traffic (GB): оставить пустым (по умолчанию)
+Expiry Date: оставить пустым (по умолчанию)
+Disable Insecure Encryption: Отключено (по умолчанию)
+Transmission: ws
+Accept Proxy Protocol: Отключено (по умолчанию)
+TLS: Включено
+Domain Name: Ваш домен
+Загрузите Certificate.crt и Private.key
 Sniffing: Включено
 ```
 
@@ -140,4 +139,3 @@ Sniffing: Включено
 В X-UI нажмите **Operate** на вашем inbound, затем нажмите **QR Code**. Этот QR-код можно использовать для импорта настроек в клиент или скопировать ссылку.
 
 > **Совет:** Посмотрите документацию вашего клиента или найдите инструкции в интернете по настройке.
-

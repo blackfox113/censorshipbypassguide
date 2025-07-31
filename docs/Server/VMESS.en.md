@@ -1,5 +1,4 @@
 # VMESS
-[Join V2Ray Discussion](https://forum.7844380499.cfd/posts/general-v2ray-discussion/){ .md-button }
 
 **What is VMESS?**
 VMESS is an older proxy protocol developed by V2Ray. It supports transporting traffic over WebSockets, TCP, KCP, HTTP, gRPC, etc. Despite being older, it is sometimes more secure than VLESS—especially when TLS is compromised—because it supports built-in AES encryption. It can also be paired with a CDN.

@@ -1,6 +1,5 @@
 # VMESS
 
-[Присоединиться к обсуждению V2Ray](https://forum.7844380499.cfd/posts/general-v2ray-discussion/){ .md-button }
 
 **Что такое VMESS?**
 VMESS — это более старый прокси-протокол, разработанный V2Ray. Он поддерживает передачу трафика через WebSockets, TCP, KCP, HTTP, gRPC и др. Несмотря на возраст, иногда он более безопасен, чем VLESS — особенно если TLS скомпрометирован — потому что в нём встроено AES-шифрование. Его также можно использовать вместе с CDN.
@@ -101,19 +100,19 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 3. Настройте параметры так:
 
 ```
-Remark: Имя вашего сервера  
-Protocol: VMESS  
-Listening IP: оставить пустым (по умолчанию)  
-Port: 443  
-Total Traffic (GB): оставить пустым  
-Expiry Date: оставить пустым  
-Disable Insecure Encryption: Отключено  
-Transmission: ws  
-Accept Proxy Protocol: Отключено  
-Path: /  
-TLS: Включено  
-Domain Name: Ваш домен  
-Загрузите Certificate.crt и Private.key  
+Remark: Имя вашего сервера
+Protocol: VMESS
+Listening IP: оставить пустым (по умолчанию)
+Port: 443
+Total Traffic (GB): оставить пустым
+Expiry Date: оставить пустым
+Disable Insecure Encryption: Отключено
+Transmission: ws
+Accept Proxy Protocol: Отключено
+Path: /
+TLS: Включено
+Domain Name: Ваш домен
+Загрузите Certificate.crt и Private.key
 Sniffing: Включено
 ```
 
