@@ -36,8 +36,7 @@ theme:
 extra_css:
   - css/custom.css
 
-copyright: Copyright &copy; 2025 Zenith Rifle and Wispy
-
+copyright: Copyright &copy; 2025 blackfox
 extra:
   analytics:
     provider: custom
