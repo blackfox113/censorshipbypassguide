@@ -5,6 +5,7 @@
 Welcome to the Censorship Bypass Guide. This is a full-featured documentation that will teach you how to configure your own censorship circumvention tools for server and client.
 
 ## WARNING
+
 **We are not responsible for any issues caused from censorship circumvention.** Research and stay safe.
 
 ## Why do I need to use censorship circumvention tools like VLESS when VPNs exist?
@@ -17,27 +18,27 @@ That's why we recommend you use your own server at home or on a cloud provider t
 
 ### Setup Recommended:
 
-| Environment                                   | Recommended Setup                  |
-|----------------------------------------------|------------------------------------|
-| School (Custom Firewall)                     | VLESS + CDN + WS + TLS             |
-| School (Prebuilt Solution)                   | VLESS + CDN + WS + TLS             |
-| Work (Custom Firewall)                       | VLESS + CDN + WS + TLS             |
-| Work (Prebuilt Solution)                     | NaïveProxy                         |
-| Work/School (TLS MITM)                       | VMESS + AES + CDN + WS + TLS       |
-| Iran                                          | NaïveProxy                         |
-| China                                         | NaïveProxy                         |
-| Russia                                        | VLESS or Naive                    |
-| Turkey                                       | Zapret or GoodbyeDPI               |
-| Fortinet                                     | [VLESS Reality](Environments/Fortinet.en.md)
-| Gaming in school/work/public Wi-Fi or China  | Hysteria 2                         |
+| Environment                                 | Recommended Setup                            |
+| ------------------------------------------- | -------------------------------------------- |
+| School (Custom Firewall)                    | VLESS + CDN + WS + TLS                       |
+| School (Prebuilt Solution)                  | VLESS + CDN + WS + TLS                       |
+| Work (Custom Firewall)                      | VLESS + CDN + WS + TLS                       |
+| Work (Prebuilt Solution)                    | NaïveProxy                                   |
+| Work/School (TLS MITM)                      | VMESS + AES + CDN + WS + TLS                 |
+| Iran                                        | NaïveProxy                                   |
+| China                                       | NaïveProxy                                   |
+| Russia                                      | VLESS or Naive                               |
+| Turkey                                      | Zapret or GoodbyeDPI                         |
+| Fortinet                                    | [VLESS Reality](Environments/Fortinet.en.md) |
+| Gaming in school/work/public Wi-Fi or China | Hysteria 2                                   |
 
 **Note:**
+
 - **"Solution"** means the school or workplace is using pre-existing firewall software or a commercial solution (e.g., Palo Alto, Fortinet).
 
 - **"Custom"** means they developed their own firewall or heavily modified open-source software.
 
 - Some school, work, or public Wi-Fi networks block UDP or QUIC, so Hysteria 2 can't be used.
-
 
 All software used in this guide is open source, except for part of Kasm Workspace.
 

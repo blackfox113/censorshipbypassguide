@@ -12,7 +12,7 @@ Let me walk you through each method one by one.
 
 ### Direct Connection
 
-Pretty easy to understand—it uses **NaiveProxy** or the **V2Ray suite** to connect directly to the proxy server. The upside is that it’s very simple to run and the cheapest option. The downside is that it can be very, *very* slow during peak hours (like 10 p.m. in China), and it’s also very easy to block if detected as a proxy server.
+Pretty easy to understand—it uses **NaiveProxy** or the **V2Ray suite** to connect directly to the proxy server. The upside is that it’s very simple to run and the cheapest option. The downside is that it can be very, _very_ slow during peak hours (like 10 p.m. in China), and it’s also very easy to block if detected as a proxy server.
 
 ---
 

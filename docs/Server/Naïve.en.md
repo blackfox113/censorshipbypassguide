@@ -10,8 +10,8 @@
 
 ## Why Choose NaïveProxy?
 
-* **Looks Like Normal Traffic**: Uses Chromium’s TLS stack, so it blends in like any other browser session.
-* **Simple to Use**: Easy to set up even if you're not super technical.
+- **Looks Like Normal Traffic**: Uses Chromium’s TLS stack, so it blends in like any other browser session.
+- **Simple to Use**: Easy to set up even if you're not super technical.
 
 ---
 
@@ -19,12 +19,11 @@
 
 ### What You’ll Need
 
-* A **domain name**, preferably managed through Cloudflare or a similar DNS provider.
-* A **Linux VPS** with ports **443** and **80** open.
-* **Basic requirements**:
-
-  * Some familiarity with the command line
-  * Root access to your server
+- A **domain name**, preferably managed through Cloudflare or a similar DNS provider.
+- A **Linux VPS** with ports **443** and **80** open.
+- **Basic requirements**:
+  - Some familiarity with the command line
+  - Root access to your server
 
 ---
 
