@@ -32,12 +32,12 @@ We recommend TLS over VLESS because it adds encryption, and a CDN provides a way
 
 ---
 
-### Install X-UI
+### Install 3X-UI
 
-1. To install **x-ui**, execute the following in a terminal:
+1. To install **3x-ui**, execute the following in a terminal:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 ```
 
 > To install, just follow the on-screen instructions. Make sure you enable **system startup**.
@@ -62,7 +62,7 @@ sudo ufw disable
 
 ---
 
-### Access X-UI Panel
+### Access 3X-UI Panel
 
 1. Open your browser and access:
 
@@ -70,7 +70,7 @@ sudo ufw disable
 http://<server-ip>:<port-you-set>
 ```
 
-This will be shown to you after launching X-UI with `sudo x-ui`.
+This will be shown to you after launching 3X-UI with `sudo x-ui`.
 
 2. Log in with the credentials.
 
@@ -135,6 +135,6 @@ Sniffing: Enabled
 
 ## You're Done!
 
-Click **Operate** on your inbound in X-UI and then click **QR Code**. You can use this QR code to import the configuration to your client or click the QR to copy the share link to the clipboard.
+Click **Operate** on your inbound in 3X-UI and then click **QR Code**. You can use this QR code to import the configuration to your client or click the QR to copy the share link to the clipboard.
 
 > **Hint:** Check your client’s documentation or search online for configuration instructions.
