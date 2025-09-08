@@ -39,7 +39,7 @@ VMESS — это более старый прокси-протокол, разр
 1. Чтобы установить **X-UI**, выполните в терминале:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 ```
 
 > Следуйте инструкциям на экране. Обязательно включите **автозапуск системы**.
