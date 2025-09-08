@@ -38,7 +38,7 @@ VMESS is an older proxy protocol developed by V2Ray. It supports transporting tr
 1. To install **X-UI**, execute the following in a terminal:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 ```
 
 > Follow the on-screen instructions. Make sure you enable **system startup**.
