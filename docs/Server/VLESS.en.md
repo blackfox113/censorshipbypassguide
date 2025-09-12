@@ -24,11 +24,11 @@ We recommend TLS over VLESS because it adds encryption, and a CDN provides a way
 
 ### Requirements
 
-* A domain name with Cloudflare
-* A **Linux** VPS with port forwarding for 443 and a random port
-  *(Other web hosting services like Render or Koyeb will also do; they provide a domain and CDN in most cases.)*
-* Basic command line skills
-* Root access
+- A domain name with Cloudflare
+- A **Linux** VPS with port forwarding for 443 and a random port
+  _(Other web hosting services like Render or Koyeb will also do; they provide a domain and CDN in most cases.)_
+- Basic command line skills
+- Root access
 
 ---
 
@@ -85,9 +85,9 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 
 Make sure you have OpenSSL installed. During the prompt, enter:
 
-* **Country Name (2-letter code)** – e.g., US
-* **Common Name (CN)** – enter your domain (e.g., example.com)
-* Leave the rest optional or fill as needed.
+- **Country Name (2-letter code)** – e.g., US
+- **Common Name (CN)** – enter your domain (e.g., example.com)
+- Leave the rest optional or fill as needed.
 
 ---
 

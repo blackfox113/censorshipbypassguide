@@ -35,10 +35,10 @@ Because this is just a website, its fingerprint and everything will match a norm
 
 ### Prerequisites:
 
-* A **domain name**
-* A **Linux VPS** with port 443 forwarded
-* Basic command-line skills
-* Root access
+- A **domain name**
+- A **Linux VPS** with port 443 forwarded
+- Basic command-line skills
+- Root access
 
 ---
 

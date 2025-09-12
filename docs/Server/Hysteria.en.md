@@ -10,17 +10,17 @@
 
 ## Key Concepts
 
-| Term                     | Description                                                                                     |
-|--------------------------|-------------------------------------------------------------------------------------------------|
-| **Hysteria 2**           | A fast, secure proxy designed for reliable internet access, even in restricted environments.   |
-| **QUIC**                 | A next-generation transport protocol that improves speed and reliability over UDP.             |
-| **Bypassing Censorship** | Lets users access restricted content by avoiding traditional detection methods.                |
-| **UDP Acceleration**     | Speeds up data transfers using the faster, connectionless UDP protocol.                        |
-| **Flexible Encryption**  | Offers adjustable security settings to fit different needs.                                    |
-| **Low Latency**          | Ideal for real-time use cases like gaming and live streaming.                                  |
-| **High Performance**     | Handles demanding tasks such as large file transfers and HD media streaming.                   |
-| **Lightweight**          | Runs efficiently with minimal system resource usage.                                           |
-| **Easy Setup**           | Simple installation process, even for users with limited experience.                           |
+| Term                     | Description                                                                                  |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| **Hysteria 2**           | A fast, secure proxy designed for reliable internet access, even in restricted environments. |
+| **QUIC**                 | A next-generation transport protocol that improves speed and reliability over UDP.           |
+| **Bypassing Censorship** | Lets users access restricted content by avoiding traditional detection methods.              |
+| **UDP Acceleration**     | Speeds up data transfers using the faster, connectionless UDP protocol.                      |
+| **Flexible Encryption**  | Offers adjustable security settings to fit different needs.                                  |
+| **Low Latency**          | Ideal for real-time use cases like gaming and live streaming.                                |
+| **High Performance**     | Handles demanding tasks such as large file transfers and HD media streaming.                 |
+| **Lightweight**          | Runs efficiently with minimal system resource usage.                                         |
+| **Easy Setup**           | Simple installation process, even for users with limited experience.                         |
 
 ---
 
@@ -48,6 +48,7 @@
 ### Step 1: Become Root
 
 Switch to the root user:
+
 ```bash
 sudo -s
 ```
@@ -57,6 +58,7 @@ sudo -s
 ### Step 2: Install Hysteria 2
 
 Use the official script to install:
+
 ```bash
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
@@ -66,6 +68,7 @@ bash <(curl -fsSL https://get.hy2.sh/)
 ### Step 3: Generate a Self-Signed SSL Certificate
 
 Run the following to create the certificate:
+
 ```bash
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) \
   -keyout /etc/hysteria/server.key \
@@ -74,6 +77,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) \
 ```
 
 Adjust file permissions:
+
 ```bash
 sudo chown hysteria /etc/hysteria/server.key
 sudo chown hysteria /etc/hysteria/server.crt
@@ -86,11 +90,13 @@ sudo chown hysteria /etc/hysteria/server.crt
 ### Step 4: Start the Server
 
 Start the Hysteria service:
+
 ```bash
 systemctl start hysteria-server.service
 ```
 
 And enable it to start at boot:
+
 ```bash
 systemctl enable hysteria-server.service
 ```
@@ -100,6 +106,7 @@ systemctl enable hysteria-server.service
 ### Step 5: Configure Hysteria 2
 
 Create the configuration file:
+
 ```bash
 cat << EOF > /etc/hysteria/config.yaml
 listen: :443
@@ -124,6 +131,7 @@ EOF
 ### Step 6: Apply the Configuration
 
 Restart the server to load the new settings:
+
 ```bash
 systemctl restart hysteria-server.service
 ```

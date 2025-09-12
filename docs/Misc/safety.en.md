@@ -1,5 +1,3 @@
-
-
 # Safety Guide
 
 Using a VPN or proxy always carries risks. Depending on your location, it could even be illegal. Take precautions to protect yourself.

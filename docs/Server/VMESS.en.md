@@ -26,10 +26,10 @@ VMESS is an older proxy protocol developed by V2Ray. It supports transporting tr
 
 ### Requirements
 
-* A domain name with Cloudflare
-* A **Linux** VPS with port forwarding for 443 and a random port
-* Basic command line skills
-* Root access
+- A domain name with Cloudflare
+- A **Linux** VPS with port forwarding for 443 and a random port
+- Basic command line skills
+- Root access
 
 ---
 
@@ -86,9 +86,9 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 
 Make sure you have OpenSSL installed. During the prompt, enter:
 
-* **Country Name (2-letter code)** – e.g., US
-* **Common Name (CN)** – enter your domain (e.g., example.com)
-* Leave the rest optional or fill as needed.
+- **Country Name (2-letter code)** – e.g., US
+- **Common Name (CN)** – enter your domain (e.g., example.com)
+- Leave the rest optional or fill as needed.
 
 ---
 
