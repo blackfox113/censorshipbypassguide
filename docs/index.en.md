@@ -17,6 +17,8 @@ That's why we recommend you use your own server at home or on a cloud provider t
 
 ### Setup Recommended:
 
+> Warning: Your environment is different from my testing setup. Please double-check your environment, as there is a lot of uncertainty you might not be aware of. Choosing the wrong setup could put you in a dangerous situation.
+
 | Environment                                   | Recommended Setup                  |
 |----------------------------------------------|------------------------------------|
 | School (Custom Firewall)                     | VLESS + CDN + WS + TLS             |

@@ -75,5 +75,7 @@ Click **Get New Cert** — this will auto-fill the Public Key and Private Key.
 Make sure to point your **domain name** to your **server IP**.
 Disable proxying in cloudflare.
 
+**WARNING:** If you are using a VPS, make sure to use HTTPS for the panel. Without it, the firewall between your fps panel and your PC connection can see everything. If you’re using the panel on a home network and not exposing the port, it should be fine. To secure the panel with HTTPS, you can use a free ssl certificate (it will work), or you can search for a guide online. Alternatively, you can take the simpler route and use SSH port forwarding.
+
 Under the menu (click the three dots), click **Export All URLs** and import them into your client.
 Depending on the case, you might need to change the address to your **domain name**.

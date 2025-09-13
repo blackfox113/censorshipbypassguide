@@ -140,4 +140,6 @@ Click **Operate** on your inbound in X-UI and then click **QR Code**. You can us
 
 Make sure to enable AES encryption in your client by editing the config.
 
+**WARNING**: If you are using a VPS, make sure to use HTTPS for the panel. Without it, the firewall between your vps panel and your PC connection can see everything. If you’re using the panel on a home network and not exposing the port, it should be fine. To secure the panel with HTTPS, you can use the pre-existing Cloudflare certificate (it will work), or you can search for a guide online. Alternatively, you can take the simpler route and use SSH port forwarding.
+
 > **Hint:** Check the documentation of your client or search online for configuration steps.

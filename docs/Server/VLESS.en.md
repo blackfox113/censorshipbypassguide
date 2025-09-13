@@ -137,4 +137,6 @@ Sniffing: Enabled
 
 Click **Operate** on your inbound in 3X-UI and then click **QR Code**. You can use this QR code to import the configuration to your client or click the QR to copy the share link to the clipboard.
 
+**WARNING**: If you are using a VPS, make sure to use HTTPS for the panel. Without it, the firewall between your vps panel and your PC connection can see everything. If you’re using the panel on a home network and not exposing the port, it should be fine. To secure the panel with HTTPS, you can use the pre-existing Cloudflare certificate (it will work), or you can search for a guide online. Alternatively, you can take the simpler route and use SSH port forwarding.
+
 > **Hint:** Check your client’s documentation or search online for configuration instructions.
