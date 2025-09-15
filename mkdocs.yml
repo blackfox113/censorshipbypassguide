@@ -66,14 +66,13 @@ plugins:
             NaïveProxy: "NaïveProxy"
             Trojan: "Trojan"
             HolyUB: "HolyUB"
+            XTLS: "XTLS"
             Kasm Workspaces: "Kasm Workspaces"
             Doge Unblocker: "Doge Unblocker"
             VPN: "VPN"
             Client Side: "Client Side"
             Clients: "Clients"
             Networking: "Networking"
-            Environments: "Environments"
-            Fortinet: "Fortinet"
             Useful Links: "Useful Links"
             Website Source Code: "Website Source Code"
             Gateway: "Gateway"
@@ -97,14 +96,13 @@ plugins:
             Hysteria 2: "Hysteria 2" # Keep as Hysteria 2 if it's a proper noun/not translated
             NaïveProxy: "NaïveProxy" # Keep as NaïveProxy if it's a proper noun/not translated
             Trojan: "Trojan" # Keep as Trojan if it's a proper noun/not translated
+            XTLS: "XTLS"
             Kasm Workspaces: "Kasm Workspaces" # Keep as Kasm Workspaces if it's a proper noun/not translated
             Doge Unblocker: "Doge Unblocker" # Keep as Doge Unblocker if it's a proper noun/not translated
             VPN: "VPN" # Keep as VPN if it's a proper noun/not translated
             Client Side: "Сторона клиента"
             Clients: "Клиенты"
             Networking: "Сеть"
-            Environments: "Среды"
-            Fortinet: "Fortinet" # Keep as Fortinet if it's a proper noun/not translated
             Useful Links: "Полезные ссылки"
             Website Source Code: "Исходный код сайта"
             Gateway: "Шлюз"
@@ -128,14 +126,13 @@ nav:
       - NaïveProxy: "Server/Naïve.md"
       - Trojan: "Server/Trojan.md"
       - HolyUB: "Server/HolyUB.md"
+      - XTLS: "Server/xtls.md"
       - Kasm Workspaces: "Server/Kasm.md"
       - Doge Unblocker: "Server/Doge.md"
       - VPN: "Server/VPN.md"
   - Client Side:
       - Clients: "Client Side/Clients.md"
       - Networking: "Client Side/Networking.md"
-  - Environments:
-      - Fortinet: "Environments/Fortinet.md"
   - Useful Links:
       - Website Source Code: "https://github.com/eli32-vlc/censorshipbypassguide"
       - Gateway: "https://censordex.fr.to"

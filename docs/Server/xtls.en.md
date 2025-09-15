@@ -1,4 +1,4 @@
-# Fortinet
+# XTLS
 
 This really depends on your system admin at your work or your school.
 
