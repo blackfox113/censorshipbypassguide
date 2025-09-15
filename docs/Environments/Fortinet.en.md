@@ -11,8 +11,6 @@ We can bypass this by doing **SNI spoofing** on a trusted website, e.g., `zoom.c
 ## What You Need
 
 You need the new **3x-ui** panel, which is an upgrade from the normal **XUI English** panel.
-Why didn’t I choose this for all guides? Because it’s harder for a newbie to set up.
-
 Also, port forward **443** and **80** on the firewall. You will also need a **domain name**.
 
 ---
