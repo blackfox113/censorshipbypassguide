@@ -126,7 +126,7 @@ nav:
       - VMESS: "Server/VMESS.md"
       - Hysteria 2: "Server/Hysteria.md"
       - NaïveProxy: "Server/Naïve.md"
-      - Hysteria 2 SNI: "Server/Hysteria-SNI.md"
+      - Hysteria 2 SNI: "Server/Hysteria2-SNI.md"
       - Trojan: "Server/Trojan.md"
       - HolyUB: "Server/HolyUB.md"
       - XTLS: "Server/xtls.md"
