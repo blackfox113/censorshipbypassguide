@@ -6,7 +6,7 @@ Welcome to the **Censorship Bypass Guide**, a personal hub for navigating intern
 
 This site includes **detailed, easy-to-follow guides** to help you set up your own censorship bypass tools—both on servers and client devices. Whether you're just starting out or have some experience, you'll likely find something useful here. If the main site isn't accessible, you can also read the guides directly on GitHub in markdown format.
 
-If you have questions, want to discuss ideas, or share your own methods, you're welcome to join the **[forum](https://2305878273.7844380499.cfd/misc/forum/)**. It's a space for people who care about open access to information.
+If you have questions, want to discuss ideas, or share your own methods, you're welcome to join the **[forum](https://forum.blackfox.qzz.io)**. It's a space for people who care about open access to information.
 
 ---
 
@@ -17,9 +17,8 @@ The first Russian translation of this guide is also available.
 
 This is a community project, and suggestions or pull requests are always appreciated.
 
-**Main Site:** [https://2305878273.7844380499.cfd](https://2305878273.7844380499.cfd)
+**Main Site:** [https://cbg.fmhy.bid](https://cbg.fmhy.bid)
 
-**Gateway (easier to remember):** [https://censordex.fr.to](https://censordex.fr.to)
 
 ---
 
@@ -38,6 +37,5 @@ This is a community project, and suggestions or pull requests are always appreci
 
 Это общественный проект, и любые предложения или pull-запросы всегда приветствуются.
 
-**Основной сайт:** [https://2305878273.7844380499.cfd](https://2305878273.7844380499.cfd)
+**Основной сайт:** [https://cbg.fmhy.bid](https://cbg.fmhy.bid)
 
-**Упрощенный адрес (легче запомнить):** [https://censordex.fr.to](https://censordex.fr.to)
