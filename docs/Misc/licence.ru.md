@@ -1,3 +1,5 @@
 # Лицензия
 
-Лицензия: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en)
+Эта работа лицензирована по [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
+
+Вы можете свободно делиться и адаптировать материал в любых некоммерческих целях при условии указания соответствующего авторства.

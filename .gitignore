@@ -1,0 +1,13 @@
+# Build output
+site/
+
+# Build cache
+.cache/
+
+# macOS metadata
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]

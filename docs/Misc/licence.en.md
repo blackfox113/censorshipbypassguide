@@ -1,5 +1,5 @@
-# Privacy
+# Licence
 
-This site uses GDPR-compliant, privacy-friendly analytics provided by [Umami](https://umami.is/).
+This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
 
-If you prefer not to be tracked, you can block the analytics by using an extension like uBlock Origin.
+You are free to share and adapt the material for any non-commercial purpose, as long as appropriate attribution is given.

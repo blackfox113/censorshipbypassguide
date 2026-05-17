@@ -33,8 +33,8 @@ theme:
     - navigation.footer
     - navigation.side.indexes
 
-extra_css:
-  - css/custom.css
+# extra_css:
+  # - css/custom.css  # Create this file if custom styles are needed
 
 copyright: Copyright &copy; 2025 blackfox
 extra:
@@ -97,7 +97,7 @@ plugins:
             Hysteria 2: "Hysteria 2" # Keep as Hysteria 2 if it's a proper noun/not translated
             NaïveProxy: "NaïveProxy" # Keep as NaïveProxy if it's a proper noun/not translated
             Trojan: "Trojan" # Keep as Trojan if it's a proper noun/not translated
-            Гистерия 2 SNI: "Hysteria2-SNI"
+            Hysteria 2 SNI: "Hysteria 2 SNI"
             XTLS: "XTLS"
             Kasm Workspaces: "Kasm Workspaces" # Keep as Kasm Workspaces if it's a proper noun/not translated
             Doge Unblocker: "Doge Unblocker" # Keep as Doge Unblocker if it's a proper noun/not translated
